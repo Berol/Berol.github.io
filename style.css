@@ -1,6 +1,8 @@
+
+
 body{
     margin: auto;
-    min-height: 100%;
+    height: 100%;
 
 }
 
@@ -204,14 +206,16 @@ section.ftr h3{
 section.startSite{
     background:transparent  50% 50%/cover no-repeat;
     position: relative;
+    height: 700px;
+
 }
 
-section.startSite .tlo1{
+.tlo1{
     background-image: url("./img/tlo1.jpg") !important;
     transition: background-image 3s;
 }
 
-section.startSite .tlo2{
+.tlo2{
     background-image: url("./img/tlo2.jpg") !important;
     transition: background-image 3s;
 }
@@ -270,13 +274,11 @@ section.startSite h1:first-of-type, section.startSite h2:first-of-type {
     }
 }
 
-
 @media screen and (max-width:1600px ){
     div.context{
         min-height: 440px;
     }
 }
-
 
 @media screen and (max-width:1300px ){
     div.context{
@@ -284,6 +286,36 @@ section.startSite h1:first-of-type, section.startSite h2:first-of-type {
     }
 }
 
+@media screen and (max-width:1200px ){
+    section.startSite{
+        height:500px;
+    }
+
+    section.startSite div.heading{
+        margin: 100px 40% 0 155px;
+    }
+
+    section.startSite div.heading h1{
+        font-size: 36px;
+    }
+
+    section.startSite div.heading h2{
+        font-size: 20px;
+    }
+
+    section.startSite div.green_box{
+        padding: 20px;
+        width: 200px;
+    }
+
+    section.startSite div.green_box h1{
+        font-size: 16px;
+    }
+
+    section.startSite div.green_box h2{
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width: 900px){
 
@@ -348,6 +380,35 @@ section.startSite h1:first-of-type, section.startSite h2:first-of-type {
        position: static;
 
    }
+
+    section.startSite{
+        height:330px;
+    }
+
+    section.startSite div.heading{
+        margin: 70px 40% 0 100px;
+    }
+
+    section.startSite div.heading h1{
+        font-size: 24px;
+    }
+
+    section.startSite div.heading h2{
+        font-size: 14px;
+    }
+
+    section.startSite div.green_box{
+        padding: 10px;
+        width: 130px;
+    }
+
+    section.startSite div.green_box h1{
+        font-size: 12px;
+    }
+
+    section.startSite div.green_box h2{
+        font-size: 10px;
+    }
 
 };
 

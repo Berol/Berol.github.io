@@ -25,7 +25,6 @@ $(function () {
         $('.obrazek').css('height', contextHeight);
         $('div.image').css('width', dividableWidth);
         $('div.image').css('height', parseInt($('div.obrazek').css('height')) - parseInt($('div.obrazek').css('height')) % 40);
-        $('.startSite').css('height', (window.screen.availHeight ));
         location.reload();
     });
 
