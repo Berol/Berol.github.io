@@ -2,11 +2,6 @@ $(function () {
 
     console.log('dzialam');
 
-    if(($(window).width()<650) &&  (document.URL.indexOf('podroz.html')!==-1)){
-        $('button').css('position','absolute');
-        $('button').css('top','220px');
-    }
-
     var contextHeight = $('.context').css('height');
     $('.obrazek').css('height', contextHeight);
 

@@ -1,5 +1,4 @@
 
-
 body{
     margin: auto;
     height: 100%;
@@ -184,6 +183,10 @@ section.ftr div.column{
     float: left;
 }
 
+section.ftr i {
+    margin-right: 15px;
+}
+
 section.ftr p{
     font-size: 16px;
     color: #9498ab;
@@ -324,7 +327,7 @@ section.startSite h1:first-of-type, section.startSite h2:first-of-type {
     }
 
     section.nav div.ikons ul{
-        padding: 5px 0;
+        padding: 5px 0 5px 20px;
         margin: 0;
     }
 
@@ -376,13 +379,29 @@ section.startSite h1:first-of-type, section.startSite h2:first-of-type {
         margin: 5px;
     }
 
-   section.ftr{
-       position: static;
+    section.main div.context h2{
+        font-size: 26px;
+    }
 
-   }
+    section.ftr i {
+        margin-right: 7px;
+    }
+
+    section.ftr p{
+        font-size: 16px;
+        color: #9498ab;
+    }
+
+    section.ftr h2{
+        font-size: 16px;
+    }
+
+    section.ftr h3{
+        font-size: 16px;
+    }
 
     section.startSite{
-        height:330px;
+        height:470px;
     }
 
     section.startSite div.heading{
@@ -406,12 +425,43 @@ section.startSite h1:first-of-type, section.startSite h2:first-of-type {
         font-size: 12px;
     }
 
-    section.startSite div.green_box h2{
+    section.startSite div.green_box h2 {
         font-size: 10px;
     }
 
-};
+}
 
+@media screen and (max-width: 850px){
+    section.main div.context button{
+        position:absolute;
+        top:245px;
+        left:10px;
+    }
 
+    section.startSite{
+        height:380px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    section.main div.context button{
+        position:absolute;
+        top:220px;
+        left:10px;
+    }
+
+    section.ftr{
+        bottom: -16px;
+    }
+
+    section.nav div.ikons ul{
+        padding: 5px 0;
+    }
+
+    section.startSite{
+        height:300px;
+    }
+}
 
 
