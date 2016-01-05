@@ -127,6 +127,7 @@ color:white;
 
 section.nav div.ikons{
     background: white;
+    display: none;
 }
 
 section.nav div.ikons ul{
@@ -402,33 +403,33 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 
 
-@media only screen and (min-width: 230px) {
-    body { font-size: 5px;}
-}
-@media only screen and (min-width: 500px) {
-    body { font-size: 7px;}
-}
-@media only screen and (min-width: 630px) {
-    body { font-size: 9px;}
-}
-@media only screen and (min-width: 850px) {
-    body { font-size: 10px;}
-}
-@media only screen and (min-width: 940px) {
-    body { font-size: 13px;}
-}
-@media only screen and (min-width: 1030px) {
-    body { font-size: 14px;}
-}
-@media only screen and (min-width: 1100px) {
-    body { font-size: 15px}
-}
-@media only screen and (min-width: 1340px) {
-    body { font-size: 17px; }
-}
-@media only screen and (min-width: 1580px) {
-    body { font-size: 18px; }
-}
+/*@media only screen and (min-width: 230px) {*/
+    /*body { font-size: 5px;}*/
+/*}*/
+/*@media only screen and (min-width: 500px) {*/
+    /*body { font-size: 7px;}*/
+/*}*/
+/*@media only screen and (min-width: 630px) {*/
+    /*body { font-size: 9px;}*/
+/*}*/
+/*@media only screen and (min-width: 850px) {*/
+    /*body { font-size: 10px;}*/
+/*}*/
+/*@media only screen and (min-width: 940px) {*/
+    /*body { font-size: 13px;}*/
+/*}*/
+/*@media only screen and (min-width: 1030px) {*/
+    /*body { font-size: 14px;}*/
+/*}*/
+/*@media only screen and (min-width: 1100px) {*/
+    /*body { font-size: 15px}*/
+/*}*/
+/*@media only screen and (min-width: 1340px) {*/
+    /*body { font-size: 17px; }*/
+/*}*/
+/*@media only screen and (min-width: 1580px) {*/
+    /*body { font-size: 18px; }*/
+/*}*/
 
 
 
