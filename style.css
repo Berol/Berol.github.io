@@ -90,6 +90,7 @@ section div.kontakt div.close:hover{
     background: #7DBA2F;
 }
 
+
 section.nav{
     width:100%;
     position: fixed;
@@ -103,18 +104,24 @@ section.nav{
 section.nav div.top ul{
     text-align: right;
     margin-right: 10%;
+    padding: 0;
+}
+
+div.top ul li a{
+    text-decoration: none;
+    color: #a4adca;
 }
 
 section.nav div.top ul li{
     display: inline-block;
     text-align: right;
-    padding: 0 20px;
+    padding: 0 1.250em;
     font-size: 0.875em;
     color: #a4adca;
     cursor: pointer;
 }
 
-section.nav div.top ul li:hover{
+section.nav div.top ul li:hover, div.top ul li a:hover{
 color:white;
 }
 
@@ -154,6 +161,14 @@ section.main{
     position: relative;
     left: 0;
     margin:100px 10% 200px 10%;
+    box-sizing: border-box;
+}
+
+section.main div.firmoweFoto{
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 60%;
 }
 
 section.main div.obrazek{
@@ -188,6 +203,15 @@ section.main div.kafelka{
     background-repeat: no-repeat;
 }
 
+section.main div.contextFirma{
+    position: relative;
+    width: 40%;
+    padding: 20px 0px 20px 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
 section.main div.context{
     position: relative;
     left: 60%;
@@ -198,7 +222,7 @@ section.main div.context{
     -webkit-box-sizing: border-box;
 }
 
-section.main div.context h1, div.formularz h1{
+section.main div.context h1, div.formularz h1, div.contextFirma h1{
     color: #7DBA2F;
     font-size: 0.813em;
     font-weight: 800;
@@ -208,7 +232,7 @@ section.main div.context h1, div.formularz h1{
     display: inline-block;
 }
 
-section.main div.context h2, div.descriptions h2, div.formularz h2, div.formularz h3{
+section.main div.context h2, div.contextFirma h2, div.descriptions h2, div.formularz h2, div.formularz h3{
     color:#2C3459;
     font-size: 2.250em;
     font-family: 'Signika';
@@ -242,7 +266,7 @@ section.main div.context button:hover, div.formularz button:hover{
     transition: color 0.6s, background 0.6s;
 }
 
-section.main div.context p, div.context ul li, div.descriptions p, div.descriptions ul li {
+section.main div.context p, div.contextFirma p, div.context ul li, div.descriptions p, div.descriptions ul li {
     color:#9498ab;
     font-size: 1em;
     font-weight: 300;
@@ -376,27 +400,34 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     display: none;
 }
 
-@media only screen and (max-width: 480px) {
-    body { font-size: 11px;}
-}
 
-@media only screen and (min-width: 480px) {
-    body { font-size: 12px;}
+
+@media only screen and (min-width: 230px) {
+    body { font-size: 5px;}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
+    body { font-size: 7px;}
+}
+@media only screen and (min-width: 630px) {
+    body { font-size: 9px;}
+}
+@media only screen and (min-width: 850px) {
+    body { font-size: 10px;}
+}
+@media only screen and (min-width: 940px) {
     body { font-size: 13px;}
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1030px) {
     body { font-size: 14px;}
 }
-@media only screen and (min-width: 1170px) {
-    body { font-size: 15px;}
+@media only screen and (min-width: 1100px) {
+    body { font-size: 15px}
 }
 @media only screen and (min-width: 1340px) {
-    body { font-size: 16px; }
+    body { font-size: 17px; }
 }
 @media only screen and (min-width: 1580px) {
-    body { font-size: 17px; }
+    body { font-size: 18px; }
 }
 
 
