@@ -2,12 +2,25 @@ $(function () {
 
     console.log('dzialam');
 
+    $('.formularz_kontaktowy').on('click',function(){
+        $('.kontakt_background').css('display','block');
+        $('.kontakt').slideDown();
+        $(".kontakt_background, .close").on('click',function(){
+            $('.kontakt').slideUp(600 ,function(){
+                $('.kontakt_background').css('display','none');
+            });
+        });
+    });
+
+
+
+
     var contextHeight = $('.context').css('height');
     $('.obrazek').css('height', contextHeight);
 
 
-    var dividableWidth = parseInt($('div.obrazek').css('width')) - (parseInt($('div.obrazek').css('width')) % 40);
-    var dividableHeight = parseInt($('div.obrazek').css('height')) - (parseInt($('div.obrazek').css('height')) % 40);
+    dividableWidth = parseInt($('div.obrazek').css('width')) - (parseInt($('div.obrazek').css('width')) % 40);
+    dividableHeight = parseInt($('div.obrazek').css('height')) - (parseInt($('div.obrazek').css('height')) % 40);
     $('div.image').css('width', dividableWidth );
     $('.kafelka').css('background-size', dividableWidth);
     $('div.image').css('height', dividableHeight);
@@ -37,8 +50,8 @@ $(function () {
             return nowaKafelka;
         }
 
-        var imgWidth = parseInt($('div.image').css('width'));
-        var imgHeight = parseInt($('div.image').css('height'));
+        var imgWidth = dividableWidth;
+        var imgHeight = dividableHeight;
 
         for (var j = 0, count = 1; j < imgHeight; j += 40) {
             var positionY = j + 'px';
@@ -105,15 +118,27 @@ $(function () {
         $('.startSite').toggleClass('tlo1');
         $('.startSite').toggleClass('tlo2');
 
-        var headings = $('.heading').children();
+        var textVisibility = $('.heading, .box2').children();
+        var box2= $('.box2').children();
 
-            $.each(headings, function () {
+            $.each(textVisibility, function () {
                 if ($(this).css('display') == 'none') {
                     $(this).fadeIn(3000);
                 } else {
                     $(this).hide();
                 }
             });
+
+        //var negativeMargin=$('.green_box').css('width');
+
+        $('.box1').animate({left:'-360px'},function(){
+            $(this).animate({left:0})
+        })
+
+        $('.box2').animate({right:'-360px'},function(){
+            $(this).animate({right:0})
+        })
+
     };
 
     setInterval(imageSelection, 8000);

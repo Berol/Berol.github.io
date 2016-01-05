@@ -11,9 +11,9 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
-
+        font-size: inherit;
 font-style: normal;
-margin-left: 0px;
+
 }.flaticon-architecture1:before {
 	content: "\e000";
 }
@@ -35,10 +35,10 @@ margin-left: 0px;
 .flaticon-factory6:before {
 	content: "\e006";
 }
-.flaticon-letter110:before {
+.flaticon-letterx:before {
 	content: "\e007";
 }
-.flaticon-location76:before {
+.flaticon-letter110:before {
 	content: "\e008";
 }
 .flaticon-main-page:before {
@@ -50,7 +50,7 @@ margin-left: 0px;
 .flaticon-stats100:before {
 	content: "\e00b";
 }
-.flaticon-tower11:before {
+.flaticon-tractor6:before {
 	content: "\e00c";
 }
 .flaticon-umbrella16:before {
@@ -59,9 +59,6 @@ margin-left: 0px;
 .flaticon-wallet2:before {
 	content: "\e00e";
 }
-.flaticon-wind30:before {
-	content: "\e00f";
-}
 .flaticon-windmill9:before {
-	content: "\e010";
+	content: "\e00f";
 }
