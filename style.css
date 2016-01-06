@@ -12,7 +12,7 @@ section div.kontakt_background{
     left: 0;
     background: rgba( 15, 19, 36, 0.73 );
     z-index: 99998;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
     display: none;
 }
 
@@ -232,7 +232,7 @@ section.main div.context h1, div.formularz h1, div.contextFirma h1{
     color: #7DBA2F;
     font-size: 0.813em;
     font-weight: 800;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
     padding-bottom: 15px;
     border-bottom: 3px solid #7DBA2F;
     display: inline-block;
@@ -241,7 +241,7 @@ section.main div.context h1, div.formularz h1, div.contextFirma h1{
 section.main div.context h2, div.contextFirma h2, div.descriptions h2, div.formularz h2, div.formularz h3{
     color:#2C3459;
     font-size: 2.250em;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
 }
 
 div.formularz h3{
@@ -276,7 +276,7 @@ section.main div.context p, div.contextFirma p, div.context ul li, div.descripti
     color:#9498ab;
     font-size: 1em;
     font-weight: 300;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
     line-height: 26px;
 }
 
@@ -327,7 +327,7 @@ section.ftr h2{
     color: #7DBA2F;
     font-weight: 400;
     font-size: 21px;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -360,7 +360,7 @@ section.startSite div.green_box{
     color: #fff;
     background: rgba(145, 218, 50, 0.85);
     padding: 20px;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
     width: 300px;
 }
 
@@ -388,7 +388,7 @@ section.startSite div.box2{
 section.startSite div.heading{
     color: #2C3459;
     margin: 200px 40% 0 155px;
-    font-family: 'Signika';
+    font-family: 'Signika',"sans-serif";
 }
 
 section.startSite div.heading h1{
