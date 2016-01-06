@@ -12,32 +12,26 @@ $(function () {
         });
     });
 
+    function wielkoscObrazkow() {
+        var contextHeight = $('.context').css('height');
+        $('.obrazek').css('height', contextHeight);
+        var height = $('.contextFirma').css('height');
+        $('.firmoweFoto').css('height', height);
 
+        dividableWidth = parseInt($('div.obrazek').css('width')) - (parseInt($('div.obrazek').css('width')) % 40);
+        dividableHeight = parseInt($('div.obrazek').css('height')) - (parseInt($('div.obrazek').css('height')) % 40);
+        $('div.image').css('width', dividableWidth );
+        $('.kafelka').css('background-size', dividableWidth);
+        $('div.image').css('height', dividableHeight);
+    }
 
-
-    var contextHeight = $('.context').css('height');
-    $('.obrazek').css('height', contextHeight);
-
-
-    dividableWidth = parseInt($('div.obrazek').css('width')) - (parseInt($('div.obrazek').css('width')) % 40);
-    dividableHeight = parseInt($('div.obrazek').css('height')) - (parseInt($('div.obrazek').css('height')) % 40);
-    $('div.image').css('width', dividableWidth );
-    $('.kafelka').css('background-size', dividableWidth);
-    $('div.image').css('height', dividableHeight);
-    $('.main, .startSite').css('margin-top', $('.nav').css('height'));
-
+    wielkoscObrazkow();
 
     $(window).resize(function () {
-        var contextHeight = $('.context').css('height');
-        $('.main, .startSite').css('margin-top', $('.nav').css('height'));
-        $('.obrazek').css('height', contextHeight);
-        $('div.image').css('width', dividableWidth);
-        $('div.image').css('height', parseInt($('div.obrazek').css('height')) - parseInt($('div.obrazek').css('height')) % 40);
+        wielkoscObrazkow();
         location.reload();
     });
 
-
-    //image effects
     function imageEffects() {
 
         function kafelka(x, y, count) {
@@ -112,16 +106,13 @@ $(function () {
 
     imageEffects();
 
-    //start site
+    function srattSiteImageTextChange() {
 
-    function imageSelection() {
         $('.startSite').toggleClass('tlo1');
         $('.startSite').toggleClass('tlo2');
 
         var textVisibility = $('.heading, .box2').children();
-        var box2= $('.box2').children();
-
-            $.each(textVisibility, function () {
+        $.each(textVisibility, function () {
                 if ($(this).css('display') == 'none') {
                     $(this).fadeIn(3000);
                 } else {
@@ -129,37 +120,37 @@ $(function () {
                 }
             });
 
-        //var negativeMargin=$('.green_box').css('width');
-
         $('.box1').animate({left:'-360px'},function(){
             $(this).animate({left:0})
-        })
-
+        });
         $('.box2').animate({right:'-360px'},function(){
             $(this).animate({right:0})
-        })
+        });
 
     };
 
-    setInterval(imageSelection, 8000);
-
+    setInterval(srattSiteImageTextChange, 8000);
 
     $('.ftr').hover(
         function () {
             $(this).stop().animate({'margin-bottom': 0}, 400)
         }, function () {
-            $(this).stop().animate({'margin-bottom': '-125px'}, 400)
+            $(this).stop().animate({'margin-bottom': '-7.75em'}, 400)
         });
+
+
 
     //function longButtons(){
     //    var times=$('.descriptions h2').length;
-    //    for(var i= 0,idnumber=1;i<times;i++){
+    //
+    //    for(var i= 0;i<times;i++){
     //        var Longbutton=$("<div class='longButton'></div>");
     //       currentTarget=$('.descriptions h2')[i];
+    //
     //        var tempText=$(currentTarget).text();
+    //
     //        $(currentTarget).css('background','red');
     //        $(currentTarget).attr('id',i);
-    //        idnumber++;
     //
     //        $(Longbutton).text(tempText);
     //        (function (i){
