@@ -427,15 +427,17 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.obrazek{
         top:4.268em;
     }
-
 }
 @media only screen and (min-width: 768px) {
     body { font-size: 13px;}
-
+}
+@media only screen and (max-width: 820px) {
+    section.startSite div.heading{margin: 2.250em 40% 0 4.250em}
 }
 @media only screen and (max-width: 850px) {
     section.nav div.ikons a{font-size: 0.9em}
     section.startSite div.green_box{width: 230px;padding: 10px}
+    section div.kontakt div.formularz h3{ font-size: 1.5em}
 }
 @media only screen and (max-width: 928px) {
     section.nav div.ikons ul li{margin: 0 0.5em}
