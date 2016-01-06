@@ -460,11 +460,13 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.context{min-height: 600px}
 }
 @media screen and (device-aspect-ratio: 16/9){
-    section.startSite div.heading{margin: 4.250em 40% 0 4.250em}
+    section.startSite div.heading{margin: 6.250em 40% 0 4.250em}
 }
 @media screen and (orientation: portrait){
     section.startSite div.green_box{display: none}
     section.startSite div.heading{position: absolute;margin:0;bottom: 2em;left:2em}
 }
 
-
+@media only screen and (max-height: 800px) {
+    section.startSite div.heading{margin: 2.250em 40% 0 4.250em}
+}
