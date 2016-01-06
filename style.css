@@ -101,10 +101,22 @@ section.nav{
 
 }
 
+section.nav ul li .alternativeIkons{
+    background: firebrick;
+    display: none;
+}
+
 section.nav div.top ul{
+    position: relative;
     text-align: right;
     margin-right: 10%;
     padding: 0;
+}
+
+section.nav div.top ul li ul{
+    position: absolute;
+    background: red;
+    display: none;
 }
 
 div.top ul li a{
