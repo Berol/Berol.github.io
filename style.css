@@ -462,6 +462,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media screen and (orientation: portrait){
     section.startSite div.green_box{display: none}
+    section.startSite div.heading{position: absolute;bottom: 2em;left:2em}
 }
 
 
