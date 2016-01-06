@@ -431,9 +431,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 768px) {
     body { font-size: 13px;}
 }
-@media only screen and (max-width: 820px) {
-    section.startSite div.heading{margin: 2.250em 40% 0 4.250em}
-}
 @media only screen and (max-width: 850px) {
     section.nav div.ikons a{font-size: 0.9em}
     section.startSite div.green_box{width: 230px;padding: 10px}
@@ -462,11 +459,14 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media screen and (device-aspect-ratio: 16/9){
     section.startSite div.heading{margin: 6.250em 40% 0 4.250em}
 }
+@media only screen and (max-height: 800px) {
+    section.startSite div.heading{margin: 2.250em 40% 0 4.250em}
+    section.startSite div.heading h1{font-size: 2.5em;}
+    section.startSite div.heading h2{font-size: 1.5em;}
+}
 @media screen and (orientation: portrait){
     section.startSite div.green_box{display: none}
     section.startSite div.heading{position: absolute;margin:0;bottom: 2em;left:2em}
 }
 
-@media only screen and (max-height: 800px) {
-    section.startSite div.heading{margin: 2.250em 40% 0 4.250em}
-}
+
