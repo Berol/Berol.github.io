@@ -298,15 +298,19 @@ section.main div.descriptions{
 section.ftr{
     position: fixed;
     width: 100%;
-    margin-bottom: -7.75em;
+    margin-bottom: -8.1em;
     bottom: 0px;
-    padding-left: 20px ;
+    padding-left: 1.25em ;
     background: white;
     border-top: 1px solid #eee;;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
+}
+
+section.ftr div.column:first-child h2, section.ftr div.column:nth-child(2) h2{
+padding-top: 0.188em;
 }
 
 section.ftr div.column{
@@ -326,7 +330,7 @@ section.ftr p{
 section.ftr h2{
     color: #7DBA2F;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 1.313em;
     font-family: 'Signika',"sans-serif";
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -387,7 +391,7 @@ section.startSite div.box2{
 
 section.startSite div.heading{
     color: #2C3459;
-    margin: 200px 40% 0 155px;
+    margin: 11.500em 40% 0 6.250em;
     font-family: 'Signika',"sans-serif";
 }
 
@@ -427,12 +431,13 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (min-width: 768px) {
     body { font-size: 13px;}
+
 }
 @media only screen and (max-width: 850px) {
     section.nav div.ikons a{font-size: 0.9em}
+    section.startSite div.green_box{width: 230px;padding: 10px}
 }
 @media only screen and (max-width: 928px) {
-
     section.nav div.ikons ul li{margin: 0 0.5em}
 }
 @media only screen and (min-width: 1000px) {
@@ -452,7 +457,9 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     body { font-size: 17px; }
     section.main div.context{min-height: 600px}
 }
-
+@media screen and (device-aspect-ratio: 16/9){
+    section.startSite div.heading{margin: 6.250em 40% 0 4.250em}
+}
 
 
 
