@@ -187,7 +187,7 @@ section.main div.obrazek{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    pointer-events: none;
+
 }
 
 section.main div.image {
@@ -409,17 +409,30 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 
 @media only screen and (max-width: 480px) {
-    body { font-size: 11px;};
-
-    section.nav div.ikons{display: none;};
-
+    body { font-size: 11px;}
 }
-
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
+@media only screen and (max-width: 685px){
+    section.nav div.ikons {display: none}
+    section.main, section.startSite{
+        margin-top: 2.875em;
+    }
+    section.main div.obrazek{
+        top:4.268em;
+    }
+
+}
 @media only screen and (min-width: 768px) {
     body { font-size: 13px;}
+}
+@media only screen and (max-width: 850px) {
+    section.nav div.ikons a{font-size: 0.9em}
+}
+@media only screen and (max-width: 928px) {
+
+    section.nav div.ikons ul li{margin: 0 0.5em}
 }
 @media only screen and (min-width: 1000px) {
     body { font-size: 14px;}
