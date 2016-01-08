@@ -101,22 +101,11 @@ section.nav{
 
 }
 
-section.nav ul li .alternativeIkons{
-    background: firebrick;
-    display: none;
-}
-
 section.nav div.top ul{
     position: relative;
     text-align: right;
-    margin-right: 10%;
+    margin: 1em 10% 1em 0;
     padding: 0;
-}
-
-section.nav div.top ul li ul{
-    position: absolute;
-    background: red;
-    display: none;
 }
 
 div.top ul li a{
@@ -166,6 +155,49 @@ section.nav div.ikons a{
 
 section.nav div.ikons a i{
     font-size: 2.250em;
+}
+
+section.nav div.menuMobile{
+    background: #2C3459;
+    margin: 0;
+    font-size: 1.7em;
+    color: #a4adca;
+    cursor: pointer;
+    padding: 1em;
+    display: none;
+    width: 100vw;
+}
+
+section.nav div.top ul li.alternativeIkons{
+    /*background: firebrick;*/
+    display: none;
+}
+
+section.nav div.top ul li ul.dropdown .flaticon{
+    display:none;
+    position: absolute;
+    width: 400px;
+
+}
+
+section.nav div.top ul li ul.dropdown li{
+    background-color:#2C3459;
+    padding: 1em;
+    font-size: 0.875em;
+    color: #a4adca;
+    cursor: pointer;
+    width: 100%;
+}
+
+section.nav div.top ul li ul.dropdown li{
+    display: inline-block;
+}
+
+section.nav div.top ul li.mobile {
+    display:block;
+    width: 20em;
+    height: 2em;
+    text-align: left;
 }
 
 
@@ -431,10 +463,12 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     body { font-size: 12px;}
 }
 @media only screen and (max-width: 685px){
+    section.nav {width: 25vw}
     section.nav div.ikons {display: none}
-    section.ftr {display: none}
+    section.nav div.top ul{margin:0;display:none}
+    /*section.ftr {display: none}*/
     section.main, section.startSite{
-        margin-top: 2.875em;
+        margin-top: 5.3em;
     }
     section.main div.obrazek{
         top:4.268em;
@@ -478,9 +512,9 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
 }
 
-@media screen and (orientation: portrait){
-    section.startSite div.green_box{display: none}
-    section.startSite div.heading{position: absolute;margin:0;bottom: 2em;left:2em}
-}
+/*@media screen and (orientation: portrait){*/
+    /*section.startSite div.green_box{display: none}*/
+    /*section.startSite div.heading{position: absolute;margin:0;bottom: 2em;left:2em}*/
+/*}*/
 
 
