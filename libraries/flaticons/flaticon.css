@@ -41,24 +41,33 @@ font-style: normal;
 .flaticon-letter110:before {
 	content: "\e008";
 }
-.flaticon-main-page:before {
+.flaticon-mails1:before {
 	content: "\e009";
 }
-.flaticon-open180:before {
+.flaticon-main-page:before {
 	content: "\e00a";
 }
-.flaticon-stats100:before {
+.flaticon-menu48:before {
 	content: "\e00b";
 }
-.flaticon-tractor6:before {
+.flaticon-message:before {
 	content: "\e00c";
 }
-.flaticon-umbrella16:before {
+.flaticon-open180:before {
 	content: "\e00d";
 }
-.flaticon-wallet2:before {
+.flaticon-stats100:before {
 	content: "\e00e";
 }
-.flaticon-windmill9:before {
+.flaticon-tractor6:before {
 	content: "\e00f";
+}
+.flaticon-umbrella16:before {
+	content: "\e010";
+}
+.flaticon-wallet2:before {
+	content: "\e011";
+}
+.flaticon-windmill9:before {
+	content: "\e012";
 }

@@ -12,20 +12,34 @@ $(function () {
         });
     });
 
-
-
-    function ubezpieczenieDispaly(){
+    function mobilnaNawigacja(){
 
         if($('.ikons').css('display')=='none'){
-            $('.alternativeIkons').show();
+            $('.menuMobile').show();
         };
+
+        $('.menuMobile').on('click',function(){
+
+            $('.top').children('ul').children('li').toggleClass('mobile');
+
+            if($('.top').children('ul').css('display')=='none'){
+                $('.top').children('ul').css('display','block');
+                //$('.nav').css('width','25vw');
+            }else{
+                $('.top').children('ul').css('display','none');
+                //$('.nav').css('width','100%');
+            }
+
+
+
+        });
 
         $('.alternativeIkons').on('click',function(){
             $('.dropdown').toggle();
         });
     }
 
-    ubezpieczenieDispaly()
+    mobilnaNawigacja()
 
     function wielkoscObrazkow() {
         var contextHeight = $('.context').css('height');
@@ -42,9 +56,9 @@ $(function () {
 
     wielkoscObrazkow();
 
+
     $(window).resize(function () {
         wielkoscObrazkow();
-        ubezpieczenieDispaly();
         location.reload();
     });
 
