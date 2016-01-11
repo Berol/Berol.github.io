@@ -6,7 +6,7 @@ body{
     margin: auto;
     height: 100%;
     font-size: 16px;
-
+    zoom: 3; -moz-transform: scale(3); -moz-transform-origin: 0 0
 }
 
 section div.kontakt_background{
