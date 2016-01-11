@@ -532,11 +532,15 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
 }
 
-@media screen and (orientation: portrait){
+@media screen and (orientation: portrait) and (max-width: 445px){
     section.nav div.top ul li ul.dropdown{
         left: 0;
         top:12em;
     }
+    section.main div.obrazek{display:none}
+    section.main div.context{position: static;width:100%}
+    section.main div.descriptions{margin:5% 0 0 0 }
+
 }
 
 
