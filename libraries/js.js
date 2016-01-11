@@ -1,7 +1,9 @@
 $(function () {
 
     console.log('dzialam');
-
+    $('body').on('click',function(){
+        window.alert($(window).height())
+    })
     $('.formularz_kontaktowy').on('click',function(){
         $('.kontakt_background').css('display','block');
         $('.kontakt').slideDown();
@@ -19,13 +21,13 @@ $(function () {
         };
 
         $('.menuMobile').on('click',function(){
-
             $('.top').children('ul').children('li').toggleClass('mobile');
+
 
             if($('.top').children('ul').css('display')=='none'){
                 $('.top').children('ul').css('display','block');
                 $('.top').children('ul').css('position','absolute');
-                $('.top').children('ul').css('top','5.3em');
+                $('.top').children('ul').css('top','');
 
 
             }else{

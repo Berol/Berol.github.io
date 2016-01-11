@@ -163,14 +163,12 @@ section.nav div.menuMobile{
     background: -webkit-linear-gradient(top,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3459', endColorstr='#523366',GradientType=0 ); /* IE6-9 */
-
     margin: 0;
     font-size: 1.7em;
     color: #a4adca;
     cursor: pointer;
     padding: 1em;
     display: none;
-    width: 100%;
 }
 
 section.nav div.top ul li.alternativeIkons{
@@ -478,7 +476,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 685px){
+@media only screen and (max-width: 679px){
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
@@ -530,7 +528,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
 }
 
-@media screen and (orientation: portrait) and (max-width: 445px){
+@media screen and  (max-width: 445px){
     section.nav div.top ul li ul.dropdown{
         left: 0;
         top:12em;
@@ -538,6 +536,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.descriptions{margin:5% 0 0 0 }
+
 
 }
 
