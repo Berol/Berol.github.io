@@ -1,12 +1,7 @@
-html{
-    zoom: 100%;
-}
-
 body{
     margin: auto;
     height: 100%;
     font-size: 16px;
-    zoom: 3; -moz-transform: scale(3); -moz-transform-origin: 0 0
 }
 
 section div.kontakt_background{
@@ -174,29 +169,30 @@ section.nav div.menuMobile{
 }
 
 section.nav div.top ul li.alternativeIkons{
-    /*background: firebrick;*/
     display: none;
 }
 
-section.nav div.top ul li ul.dropdown .flaticon{
-    display:none;
+section.nav div.top ul li ul.dropdown {
     position: absolute;
-    width: 400px;
-
+    background: black;
+    width: 17em;
+    left: 11.25em;
+    top:0;
 }
 
 section.nav div.top ul li ul.dropdown li{
-    background-color:#2C3459;
-    padding: 1em;
+    background: red;
+    /*background-color:#2C3459;*/
     font-size: 0.875em;
     color: #a4adca;
     cursor: pointer;
-    width: 100%;
+    width: 6.32em;
+    float: left;
+    padding: 0;
+    margin: 0.05em;
+    text-align: center;
 }
 
-section.nav div.top ul li ul.dropdown li{
-    display: inline-block;
-}
 
 section.nav div.top ul li.mobile {
     display:block;
@@ -468,7 +464,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     body { font-size: 12px;}
 }
 @media only screen and (max-width: 685px){
-    section.nav {width: 25vw}
+    section.nav {width: 10em}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
     /*section.ftr {display: none}*/
