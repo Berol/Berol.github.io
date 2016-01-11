@@ -24,7 +24,10 @@ $(function () {
 
             if($('.top').children('ul').css('display')=='none'){
                 $('.top').children('ul').css('display','block');
-                //$('.nav').css('width','25vw');
+                $('.top').children('ul').css('position','absolute');
+                $('.top').children('ul').css('top','5.3em');
+
+
             }else{
                 $('.top').children('ul').css('display','none');
                 //$('.nav').css('width','100%');
