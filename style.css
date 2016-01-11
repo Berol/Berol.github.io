@@ -158,7 +158,11 @@ section.nav div.ikons a i{
 }
 
 section.nav div.menuMobile{
-    background: #2C3459;
+    background: -moz-linear-gradient(top,  rgba(44,52,89,1) 58%, rgba(82,51,102,1) 97%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3459', endColorstr='#523366',GradientType=0 ); /* IE6-9 */
+
     margin: 0;
     font-size: 1.7em;
     color: #a4adca;
@@ -182,7 +186,11 @@ section.nav div.top ul li ul.dropdown {
 }
 
 section.nav div.top ul li ul.dropdown li{
-    background: red;
+    background: -moz-linear-gradient(top,  rgba(0,112,153,1) 58%, rgba(44,52,89,1) 97%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,112,153,1) 58%,rgba(44,52,89,1) 97%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,112,153,1) 58%,rgba(44,52,89,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007099', endColorstr='#2c3459',GradientType=0 ); /* IE6-9 */
+
     /*background-color:#2C3459;*/
     font-size: 1.25em;
     color: #a4adca;
@@ -199,7 +207,11 @@ section.nav div.top ul li.mobile {
     width: 12em;
     height: 2em;
     text-align: left;
-    background: #2C3459;
+    background: -moz-linear-gradient(top,  rgba(44,52,89,1) 58%, rgba(82,51,102,1) 97%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3459', endColorstr='#523366',GradientType=0 ); /* IE6-9 */
+}
 }
 
 
@@ -468,6 +480,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.nav {background: transparent}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
+    section.nav div.top ul li{padding: 1em}
     /*section.ftr {display: none}*/
     section.main, section.startSite{
         margin-top: 5.3em;
