@@ -117,7 +117,7 @@ section.nav div.top ul li{
     display: inline-block;
     text-align: right;
     padding: 0 1.250em;
-    font-size: 0.875em;
+    font-size: 1.25em;
     color: #a4adca;
     cursor: pointer;
 }
@@ -165,7 +165,7 @@ section.nav div.menuMobile{
     cursor: pointer;
     padding: 1em;
     display: none;
-    width: 100vw;
+    width: 100%;
 }
 
 section.nav div.top ul li.alternativeIkons{
@@ -173,32 +173,33 @@ section.nav div.top ul li.alternativeIkons{
 }
 
 section.nav div.top ul li ul.dropdown {
+    padding: 0;
     position: absolute;
     background: black;
-    width: 17em;
-    left: 11.25em;
+    width:22.5em;
+    left: 14.5em;
     top:0;
 }
 
 section.nav div.top ul li ul.dropdown li{
     background: red;
     /*background-color:#2C3459;*/
-    font-size: 0.875em;
+    font-size: 1.25em;
     color: #a4adca;
     cursor: pointer;
-    width: 6.32em;
+    width: 6em;
     float: left;
     padding: 0;
-    margin: 0.05em;
     text-align: center;
 }
 
 
 section.nav div.top ul li.mobile {
     display:block;
-    width: 20em;
+    width: 12em;
     height: 2em;
     text-align: left;
+    background: #2C3459;
 }
 
 
@@ -463,8 +464,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 685px){
-    section.nav {width: 10em}
+@media only screen and (min-width: 685px){
+    section.nav {background: transparent}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
     /*section.ftr {display: none}*/
