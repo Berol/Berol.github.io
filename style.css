@@ -479,18 +479,22 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 685px){
-    section.nav {background: transparent}
+@media only screen and (min-width: 685px){
+    section.nav {background: transparent; position: relative}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
     section.nav div.top ul li{padding: 0.5em}
     section.ftr {display: none}
+    section.startSite div.green_box{display:none}
     section.main, section.startSite{
-        margin-top: 5.3em;
+        position:absolute;
+        top: 5.3em;
+        left:0;
+        margin-top: 0;
     }
-    section.main div.obrazek{
-        top:4.268em;
-    }
+    /*section.main div.obrazek{*/
+        /*top:4.268em;*/
+    /*}*/
 }
 @media only screen and (min-width: 768px) {
     body { font-size: 13px;}
