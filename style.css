@@ -481,14 +481,10 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
     section.nav div.top ul li{padding: 0.5em}
-    section.ftr {display: none}
     section.startSite div.green_box{display:none}
     section.main, section.startSite{
         margin-top: 0;
     }
-    /*section.main div.obrazek{*/
-        /*top:4.268em;*/
-    /*}*/
 }
 @media only screen and (min-width: 768px) {
     body { font-size: 13px;}
@@ -529,7 +525,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt{height: 90vh;top: 5vh}
 }
 
-@media screen and  (max-width: 445px){
+@media screen and (orientation: portrait) and (max-width: 645px){
     section.nav div.top ul li ul.dropdown{
         left: 0;
         top:12em;
@@ -550,6 +546,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         opacity: 0.2;
         z-index: -1;
     }
+    section.ftr {display: none}
 
 }
 
