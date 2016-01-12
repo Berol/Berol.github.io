@@ -476,14 +476,13 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 679px){
+@media only screen and (max-width: 1768px){
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
     section.nav div.top ul li{padding: 0.5em}
     section.startSite div.green_box{display:none}
     section.main, section.startSite{margin-top: 0;}
-    /*section.main div.context h1{display: none}*/
     section.ftr {position: static}
 
 }
@@ -550,5 +549,12 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.ftr {display: none}
 
 }
-
+@media screen and (orientation: landscape) and (max-height: 1420px){
+    section.main {margin-right:5%}
+    section.main div.descriptions {margin: 0}
+    section.main div.obrazek {float: left;position:relative;margin-top: 5em}
+    section.main div.context {width:100%;left:0;padding-top: 5em}
+    section.main div.context h1{display:none !important}
+    section.main div.context h2{position:absolute;top:-0.5em}
+}
 
