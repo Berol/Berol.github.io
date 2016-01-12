@@ -476,14 +476,14 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 1679px){
+@media only screen and (max-width: 679px){
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
     section.nav div.top ul li{padding: 0.5em}
     section.startSite div.green_box{display:none}
     section.main, section.startSite{margin-top: 0;}
-    section.main div.context h1{display: none}
+    /*section.main div.context h1{display: none}*/
     section.ftr {position: static}
 
 }
