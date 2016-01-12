@@ -552,7 +552,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         top: 0;
         left: 0;
         background-image: url('./img/dom.jpg');
-
+        background-size: cover;
         opacity: 0.2;
         z-index: -1;
     }
