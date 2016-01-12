@@ -543,7 +543,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         /*min-width: 320px;*/
 
         /* Set up proportionate scaling */
-        width: 100%;
+        width: auto;
         height: auto;
 
         /* Set up positioning */
