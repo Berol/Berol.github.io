@@ -556,5 +556,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.context {width:100%;left:0;padding-top: 5em}
     section.main div.context h1{display:none !important}
     section.main div.context h2{position:absolute;top:-0.5em}
+    section.main div.context p {font-size: 1.25em}
 }
 
