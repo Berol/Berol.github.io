@@ -551,8 +551,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         position: fixed;
         top: 0;
         left: 0;
-        background-image: url('./img/podroz.jpg');
-        background-size: cover;
+        background-image: url('./img/dom.jpg');
+        background-size: contain;
 
         opacity: 0.2;
         z-index: -1;
