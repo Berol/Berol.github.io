@@ -1,9 +1,9 @@
 $(function () {
 
     console.log('dzialam');
-    $('body').on('click',function(){
-        window.alert($(window).height())
-    })
+    //$('body').on('click',function(){
+    //    window.alert($(window).height())
+    //})
     $('.formularz_kontaktowy').on('click',function(){
         $('.kontakt_background').css('display','block');
         $('.kontakt').slideDown();
