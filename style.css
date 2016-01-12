@@ -547,11 +547,12 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         height: auto;
 
         /* Set up positioning */
+
         position: fixed;
         top: 0;
         left: 0;
         background-image: url('./img/dom.jpg');
-        background-size: ;
+
         opacity: 0.2;
         z-index: -1;
     }}
