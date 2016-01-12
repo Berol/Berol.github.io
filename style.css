@@ -544,7 +544,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
         /* Set up proportionate scaling */
         width: 100%;
-        height: auto;
+        /*height: auto;*/
 
         /* Set up positioning */
 
