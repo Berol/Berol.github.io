@@ -549,7 +549,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.ftr {display: none}
 
 }
-@media screen and (orientation: landscape) and (max-height: 1420px){
+@media screen and (orientation: landscape) and (max-height: 420px){
     section.main {margin-right:5%}
     section.main div.descriptions {margin: 0}
     section.main div.obrazek {float: left;position:relative;margin-top: 5em}
