@@ -532,6 +532,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     }
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
+    section.main div.context h2{font-size:2em}
     section.main div.descriptions{margin:5% 0 0 0 }
     section.main div.backgroundMobile{
         height: 100%;
