@@ -540,7 +540,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     div.bg{
      /* Set rules to fill background */
         min-height: 100%;
-        min-width: 320px;
+        /*min-width: 320px;*/
 
         /* Set up proportionate scaling */
         width: 100%;
@@ -550,7 +550,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         position: fixed;
         top: 0;
         left: 0;
-        background: url('./img/dom.jpg') 50% 50% / cover;
+        background: url('./img/dom.jpg') 50% 50% ;
 
         opacity: 0.2;
         z-index: -1;
