@@ -551,9 +551,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         position: fixed;
         top: 0;
         left: 0;
-        background-image: url('./img/dom.jpg');
-        background-size: cover;
-        background-position: left -300px top 0;
+        background:red;
         opacity: 0.2;
         z-index: -1;
     }
