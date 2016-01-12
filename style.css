@@ -551,7 +551,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         position: fixed;
         top: 0;
         left: 0;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-color: transparent;
