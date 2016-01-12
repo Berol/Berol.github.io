@@ -476,7 +476,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 679px){
+@media only screen and (min-width: 679px){
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
     section.nav div.top ul{margin:0;display:none}
@@ -529,7 +529,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt{height: 90vh;top: 5vh}
 }
 
-@media screen and  (max-width: 445px){
+@media screen and  (max-width: 1445px){
     section.nav div.top ul li ul.dropdown{
         left: 0;
         top:12em;
@@ -537,7 +537,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.descriptions{margin:5% 0 0 0 }
-    div.bg{
+    section.main div.backgroundMobile{
      /* Set rules to fill background */
         min-height: 100%;
         min-width: 320px;
@@ -554,7 +554,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-image: url('./img/dom.jpg');
         background-color: transparent;
         opacity: 0.2;
         z-index: -1;
