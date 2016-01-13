@@ -112,6 +112,7 @@ section.nav div.top ul{
 div.top ul li a{
     text-decoration: none;
     color: #a4adca;
+    display: block;
 }
 
 section.nav div.top ul li{
@@ -164,7 +165,7 @@ section.nav div.menuMobile{
     background: linear-gradient(to bottom,  rgba(44,52,89,1) 58%,rgba(82,51,102,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3459', endColorstr='#523366',GradientType=0 ); /* IE6-9 */
     margin: 0;
-    font-size: 1.7em;
+    font-size: 2em;
     color: #a4adca;
     cursor: pointer;
     padding: 1em;
@@ -182,7 +183,7 @@ section.nav div.top ul li ul.dropdown {
     /*width:12em;*/
     /*height:2em;*/
     left :0;
-    top:12em;
+    top:11.9em;
 }
 
 section.nav div.top ul li ul.dropdown li{
@@ -190,7 +191,7 @@ section.nav div.top ul li ul.dropdown li{
     background: -webkit-linear-gradient(top,  rgba(0,112,153,1) 58%,rgba(44,52,89,1) 97%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(0,112,153,1) 58%,rgba(44,52,89,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007099', endColorstr='#2c3459',GradientType=0 ); /* IE6-9 */
-    border: 0.1em 0 solid black;
+    border: 0.1em solid black;
     font-size: 1.25em;
     color: #a4adca;
     cursor: pointer;
@@ -273,7 +274,7 @@ section.main div.kafelka{
 section.main div.contextFirma{
     position: relative;
     width: 40%;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0 20px 20px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -283,7 +284,7 @@ section.main div.context{
     position: relative;
     left: 60%;
     width: 40%;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0 20px 20px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -352,7 +353,7 @@ section.main div.context div.longButton{
 }
 
 section.main div.descriptions{
-    margin: 5% 0 0 25%;
+    margin: 5em 0 0 25%;
 }
 
 
@@ -360,7 +361,7 @@ section.ftr{
     position: fixed;
     width: 100%;
     margin-bottom: -8.1em;
-    bottom: 0px;
+    bottom: 0;
     padding-left: 1.25em ;
     background: white;
     border-top: 1px solid #eee;;
@@ -527,7 +528,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (max-height: 641px){
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
     section div.kontakt div.formularz h4{display:none}
-    section div.kontakt {top:5%%}
+    section div.kontakt {top:5%}
 
 }
 
@@ -535,7 +536,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.context h2{font-size:2em}
-    section.main div.descriptions{margin:5% 0 0 0 }
+    section.main div.descriptions{margin:5em 0 0 0 }
     section.main div.backgroundMobile{
         height: 100%;
         width: 100%;
