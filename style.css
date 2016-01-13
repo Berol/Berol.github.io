@@ -178,8 +178,9 @@ section.nav div.top ul li ul.dropdown {
     padding: 0;
     position: absolute;
     background: black;
-    width:15em;
-    left: 13em;
+    width:12em;
+    height:2em;
+    left :13em;
     top:0;
 }
 
@@ -193,7 +194,7 @@ section.nav div.top ul li ul.dropdown li{
     color: #a4adca;
     cursor: pointer;
     height: 2.4em;
-    width: 6em;
+    width: 100%;
     float: left;
     padding: 0;
     text-align: center;
@@ -526,11 +527,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt{height: 90vh;top: 5vh}
 }
 
-@media screen and (orientation: portrait) and (max-width: 645px){
-    section.nav div.top ul li ul.dropdown{
-        left: 0;
-        top:12em;
-    }
+@media screen and (orientation: portrait) and (max-width: 1645px){
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.context h2{font-size:2em}
@@ -549,6 +546,11 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         z-index: -1;
     }
     section.ftr {display: none}
+
+    section div.kontakt div.mapa{display:none}
+    section div.kontakt div.formularz{position:relative;width:100%;margin-left:0}
+    section div.kontakt div.formularz h1,section div.kontakt div.formularz h4{display:none}
+    section div.kontakt div.formularz h3{position:static; margin:0.3em}
 
 }
 @media screen and (orientation: landscape) and (max-height: 420px){
