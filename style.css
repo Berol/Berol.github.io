@@ -524,7 +524,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-height: 641px){
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
-    section div.kontakt{height: auto;top: 0}
+    section div.kontakt{height: 100%;top: 0}
     section div.kontakt div.formularz h4{display:none}
 }
 
