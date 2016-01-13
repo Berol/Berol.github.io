@@ -146,8 +146,7 @@ $(function () {
     }
 
     $('.ftr').hover(function () {
-            $(this).on('click',function(){$(this).stop().animate({'margin-bottom': '-8.1em'}, 400)});
-            $(this).stop().animate({'margin-bottom': 0}, 400);
+            $(this).stop().animate({'margin-bottom': 0}, 400)
         }, function () {
             $(this).stop().animate({'margin-bottom': '-8.1em'}, 400)
         });
