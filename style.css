@@ -18,17 +18,14 @@ section div.kontakt_background{
 
 section div.kontakt{
     width: 74%;
-    position: fixed;
+    position: absolute;
     background-color: white;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     display: none;
-    top: 50%;
-    left:50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top:15%;
+    left:13%;
     z-index: 99999;
 }
 
@@ -56,6 +53,7 @@ section div.kontakt div.formularz{
 
 section div.kontakt div.formularz h3{
     float:right;
+    clear:right;
     margin:0 5%;
 }
 
@@ -126,7 +124,7 @@ section.nav div.top ul li{
 }
 
 section.nav div.top ul li:hover, div.top ul li a:hover{
-color:white;
+    color:white;
 }
 
 section.nav div.ikons{
@@ -183,8 +181,8 @@ section.nav div.top ul li ul.dropdown {
     background: black;
     width:12em;
     height:2em;
-    left :13em;
-    top:0;
+    left :0;
+    top:12em;
 }
 
 section.nav div.top ul li ul.dropdown li{
@@ -197,7 +195,7 @@ section.nav div.top ul li ul.dropdown li{
     color: #a4adca;
     cursor: pointer;
     height: 2.4em;
-    width: 100%;
+    width: 10.4em;
     float: left;
     padding: 0;
     text-align: center;
@@ -348,7 +346,7 @@ section.main section.main button{
 }
 
 section.main div.context div.longButton{
-display: inline-block;
+    display: inline-block;
     height:20px;
     margin: 2px 2px;
 }
@@ -373,7 +371,7 @@ section.ftr{
 }
 
 section.ftr div.column:first-child h2, section.ftr div.column:nth-child(2) h2{
-padding-top: 0.188em;
+    padding-top: 0.188em;
 }
 
 section.ftr div.column{
@@ -479,7 +477,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (min-width: 480px) {
     body { font-size: 12px;}
 }
-@media only screen and (max-width: 801px){
+@media only screen and (max-width: 801px) {
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
     section.nav div.top div.menuMobile{display:block}
@@ -487,6 +485,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.nav div.top ul li{padding: 0.5em}
     section.startSite div.green_box{display:none}
     section.main div.obrazek{margin-top: 5em;}
+
     section.main, section.startSite{margin-top: 0;}
     section.ftr {position: static}
 
@@ -550,7 +549,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     }
     section.ftr {display: none}
 
-    section div.kontakt {width:100%;}
+    section div.kontakt {width:100%;left:0}
     section div.kontakt div.close{right:0;z-index:2}
     section div.kontakt div.mapa{display:none}
     section div.kontakt div.formularz{width:100%;margin-left:0}
@@ -558,7 +557,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.formularz h3{float:none;}
 
 }
-@media screen and (orientation: landscape) and (max-height: 420px){
+@media screen and (orientation: landscape) and (max-height: 440px){
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
