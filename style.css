@@ -19,7 +19,7 @@ section div.kontakt_background{
 section div.kontakt{
     width: 74%;
     height: 70vh;
-    position: absolute;
+    position: fixed;
     background-color: white;
     top: 15vh;
     left:13%;
@@ -98,7 +98,6 @@ section.nav{
     left: 0;
     z-index: 999;
     background: #2C3459 ;
-
 }
 
 section.nav div.top ul{
@@ -129,6 +128,8 @@ color:white;
 
 section.nav div.ikons{
     background: white;
+    height: 5em;
+    overflow: auto;
 }
 
 section.nav div.ikons ul{
@@ -479,9 +480,11 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media only screen and (max-width: 768px){
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
+    section.nav div.top div.menuMobile{display:block}
     section.nav div.top ul{margin:0;display:none}
     section.nav div.top ul li{padding: 0.5em}
     section.startSite div.green_box{display:none}
+    section.main div.obrazek{margin-top: 5em;}
     section.main, section.startSite{margin-top: 0;}
     section.ftr {position: static}
 
@@ -550,13 +553,13 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.ftr {display: none}
 
 }
-@media screen and (orientation: landscape) and (max-height: 1420px){
+@media screen and (orientation: landscape) and (max-height: 420px){
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
-    section.main div.obrazek {float: left;position:relative;margin-top: 5em;width:65%;max-height: 240px}
+    section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
     section.main div.context {width:100%;left:0;padding-top: 5em}
     section.main div.context h1{display:none !important}
     section.main div.context h2{position:absolute;top:-0.5em}
-    section.main div.context p {font-size: 1.25em}
+    section.main div.context p,section.main div.descriptions p {font-size: 1.25em}
 }
 

@@ -4,6 +4,10 @@ $(function () {
     //$('body').on('click',function(){
     //    window.alert($(window).height())
     //})
+    $(window).resize(function () {
+        location.reload();
+    });
+
     $('.formularz_kontaktowy').on('click',function(){
         $('.kontakt_background').css('display','block');
         $('.kontakt').slideDown();
@@ -14,39 +18,24 @@ $(function () {
         });
     });
 
-    function mobilnaNawigacja(){
-
-        if($('.ikons').css('display')=='none'){
-            $('.menuMobile').show();
-        };
+    (function mobilnaNawigacja(){
 
         $('.menuMobile').on('click',function(){
             $('.top').children('ul').children('li').toggleClass('mobile');
 
-
             if($('.top').children('ul').css('display')=='none'){
-                $('.top').children('ul').css('display','block');
-                $('.top').children('ul').css('position','absolute');
-                $('.top').children('ul').css('top','');
-
-
+                $('.top').children('ul').css({'display':'block','top':'','position':'absolute'});
             }else{
                 $('.top').children('ul').css('display','none');
-                //$('.nav').css('width','100%');
             }
-
-
-
         });
 
         $('.alternativeIkons').on('click',function(){
             $('.dropdown').toggle();
         });
-    }
+    })();
 
-    mobilnaNawigacja()
-
-    function wielkoscObrazkow() {
+    (function wielkoscObrazkow() {
         var contextHeight = $('.context').css('height');
         $('.obrazek').css('height', contextHeight);
         var height = $('.contextFirma').css('height');
@@ -57,17 +46,9 @@ $(function () {
         $('div.image').css('width', dividableWidth );
         $('.kafelka').css('background-size', dividableWidth);
         $('div.image').css('height', dividableHeight);
-    }
+    })();
 
-    wielkoscObrazkow();
-
-
-    $(window).resize(function () {
-        wielkoscObrazkow();
-        location.reload();
-    });
-
-    function imageEffects() {
+    (function imageEffects() {
 
         function kafelka(x, y, count) {
             var nowaKafelka = $('<div class="kafelka"></div>');
@@ -120,7 +101,6 @@ $(function () {
             return ('[data-id=' + a + ']');
         };
 
-
         for (i = 0; i < tablicaPrzekatnych.length; i++) {
             var temp = 50 * i;
             var id = tablicaPrzekatnych[i].split(' ');
@@ -137,23 +117,22 @@ $(function () {
         };
 
         $('.kafelka').css('background-size', dividableWidth);
-    }
+    })();
 
-    imageEffects();
-
-    function srartSiteImageTextChange() {
+    if ($('.startSite').length!==0){
+        function srartSiteImageTextChange() {
 
         $('.startSite').toggleClass('tlo1');
         $('.startSite').toggleClass('tlo2');
 
         var textVisibility = $('.heading, .box2').children();
         $.each(textVisibility, function () {
-                if ($(this).css('display') == 'none') {
-                    $(this).fadeIn(3000);
-                } else {
-                    $(this).hide();
-                }
-            });
+            if ($(this).css('display') == 'none') {
+                $(this).fadeIn(3000);
+            } else {
+                $(this).hide();
+            }
+        });
 
         $('.box1').animate({left:'-360px'},function(){
             $(this).animate({left:0})
@@ -163,44 +142,15 @@ $(function () {
         });
 
     };
-
-    setInterval(srartSiteImageTextChange, 8000);
+        setInterval(srartSiteImageTextChange, 8000);
+    }
 
     $('.ftr').hover(function () {
-            $(this).stop().animate({'margin-bottom': 0}, 400)
+            $(this).on('click',function(){$(this).stop().animate({'margin-bottom': '-8.1em'}, 400)});
+            $(this).stop().animate({'margin-bottom': 0}, 400);
         }, function () {
             $(this).stop().animate({'margin-bottom': '-8.1em'}, 400)
         });
-
-
-
-    //function longButtons(){
-    //    var times=$('.descriptions h2').length;
-    //
-    //    for(var i= 0;i<times;i++){
-    //        var Longbutton=$("<div class='longButton'></div>");
-    //       currentTarget=$('.descriptions h2')[i];
-    //
-    //        var tempText=$(currentTarget).text();
-    //
-    //        $(currentTarget).css('background','red');
-    //        $(currentTarget).attr('id',i);
-    //
-    //        $(Longbutton).text(tempText);
-    //        (function (i){
-    //        $(Longbutton).on('click',function(){
-    //           console.log(i);
-    //            window.location.href='#'+ i;
-    //            var tempvalue=window.scrollY-150;
-    //            window.scrollTo(0,tempvalue);
-    //        });})(i);
-    //        $('.context').append($(Longbutton));
-    //
-    //    };
-    //
-    //}
-    //longButtons();
-
 
 });
 
