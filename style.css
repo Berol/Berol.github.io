@@ -524,7 +524,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-height: 641px){
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
-    section div.kontakt{height: 90vh;top: 5vh}
+    section div.kontakt{height: auto;top: 0}
+    section div.kontakt div.formularz h4{display:none}
 }
 
 @media screen and (orientation: portrait) and (max-width: 1645px){
@@ -551,7 +552,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.close{right:0;z-index:2}
     section div.kontakt div.mapa{display:none}
     section div.kontakt div.formularz{position:relative;width:100%;margin-left:0}
-    section div.kontakt div.formularz h1,section div.kontakt div.formularz h4{display:none}
+    section div.kontakt div.formularz h1{display:none}
     section div.kontakt div.formularz h3{position:static; margin:0.3em}
 
 }
@@ -567,7 +568,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.mapa{display:none}
     section div.kontakt {height:auto}
     section div.kontakt div.formularz{position:static;width:100%;margin-left:0;padding-top:0}
-    section div.kontakt div.formularz h1,section div.kontakt div.formularz h4{display:none}
+    section div.kontakt div.formularz h1{display:none}
     section div.kontakt div.formularz h3{margin:0.3em}
 }
 
