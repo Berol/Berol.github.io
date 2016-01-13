@@ -18,30 +18,34 @@ section div.kontakt_background{
 
 section div.kontakt{
     width: 74%;
-    height: 70vh;
     position: fixed;
     background-color: white;
-    top: 15vh;
-    left:13%;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     display: none;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 99999;
 }
 
 section div.kontakt div.mapa{
     background: transparent url('./img/telefon.jpg') no-repeat 50% 50%/cover ;
-    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
     width: 40%;
-    overflow: hidden;
+
 }
 
 section div.kontakt div.formularz{
-    height: 100%;
     width: 60%;
     margin-left: 40%;
-    position: absolute;
+    position: relative;
     top: 0;
     padding: 5% 0 5% 5%;
     box-sizing: border-box;
@@ -51,9 +55,8 @@ section div.kontakt div.formularz{
 }
 
 section div.kontakt div.formularz h3{
-    position: absolute;
-    top: 0;
-    right: 5%;
+    float:right;
+    margin:0 5%;
 }
 
 section div.kontakt div.formularz input{
@@ -524,11 +527,10 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-height: 641px){
     section.startSite div.heading{margin: 1.8em 40% 0 4.250em}
-    section div.kontakt{height: 100%;top: 0}
     section div.kontakt div.formularz h4{display:none}
 }
 
-@media screen and (orientation: portrait) and (max-width: 1645px){
+@media screen and (orientation: portrait) and (max-width: 645px){
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.context h2{font-size:2em}
@@ -548,12 +550,12 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     }
     section.ftr {display: none}
 
-    section div.kontakt {width:100%;left:0}
+    section div.kontakt {width:100%;}
     section div.kontakt div.close{right:0;z-index:2}
     section div.kontakt div.mapa{display:none}
-    section div.kontakt div.formularz{position:relative;width:100%;margin-left:0}
+    section div.kontakt div.formularz{width:100%;margin-left:0}
     section div.kontakt div.formularz h1{display:none}
-    section div.kontakt div.formularz h3{position:static; margin:0.3em}
+    section div.kontakt div.formularz h3{float:none;}
 
 }
 @media screen and (orientation: landscape) and (max-height: 420px){
@@ -567,8 +569,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
     section div.kontakt div.mapa{display:none}
     section div.kontakt {height:auto}
-    section div.kontakt div.formularz{position:static;width:100%;margin-left:0;padding-top:0}
+    section div.kontakt div.formularz{position:static;width:100%;padding-top:0;margin-left:0}
     section div.kontakt div.formularz h1{display:none}
-    section div.kontakt div.formularz h3{margin:0.3em}
+
 }
 
