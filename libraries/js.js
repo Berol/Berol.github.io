@@ -9,6 +9,7 @@ $(function () {
     });
 
     $('.formularz_kontaktowy').on('click',function(){
+        window.scrollTo(0,0);
         $('.kontakt_background').css('display','block');
         $('.kontakt').slideDown();
         $(".kontakt_background, .close").on('click',function(){
