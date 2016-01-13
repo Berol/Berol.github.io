@@ -1,9 +1,9 @@
 $(function () {
 
     console.log('dzialam');
-    //$('body').on('click',function(){
-    //    window.alert($(window).height())
-    //})
+    $('body').on('click',function(){
+        window.alert("Kochana Laureczko podaj mi tê liczbê " + $(window).width())
+    })
     $(window).resize(function () {
         location.reload();
     });
