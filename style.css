@@ -256,8 +256,8 @@ section.main div.obrazek{
 
 section.main div.image {
     position: relative;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-position: left top;
     top: 0;
     left: 0;
     background-size: 0;
@@ -417,6 +417,7 @@ section.startSite{
 .tlo1{
     background-image: url("./img/tlo1.jpg") !important;
     transition: background-image 3s;
+
 }
 
 .tlo2{
@@ -477,7 +478,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 480px) {
     body { font-size: 12px;}
 }
 @media only screen and (max-width: 801px) {
@@ -515,7 +516,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (min-width: 1340px) {
     body { font-size: 16px; }
-    section.main div.context{min-height: 450px}
+    section.main div.context{min-height: 410px}
 }
 @media only screen and (min-width: 1580px) {
     body { font-size: 17px; }
@@ -535,11 +536,18 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 
 @media screen and (orientation: portrait) and (max-width: 645px){
+    section.startSite {background-size: 0;height: auto}
+    section.startSite div.heading{margin: 4em 2em}
+    section.startSite div.green_box{display: block}
+    section.startSite div.green_box.box2{position: relative;width: 100%;bottom: 0}
+    /*section.startSite div.backgroundMobile{top:1em}*/
+
+
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.context h2{font-size:2em}
     section.main div.descriptions{margin:5em 0 0 0 }
-    section.main div.backgroundMobile{
+    section.main div.backgroundMobile, section.startSite div.backgroundMobile{
         height: 100%;
         width: 100%;
         position: fixed;
@@ -552,6 +560,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         opacity: 0.2;
         z-index: -1;
     }
+
     section.ftr {display: none}
 
     section div.kontakt {width:100%;left:0}
@@ -563,7 +572,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
-    section.ftr {display: none}
+
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
