@@ -535,7 +535,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 
 @media screen and (orientation: portrait) and (max-width:645px){
-    section.startSite {background-size: 0;height:auto}
+    section.startSite {background-size: 0 !important;height:auto}
     section.startSite div.heading{margin:4em 2em}
 
     section.main div.obrazek{display:none}
@@ -565,8 +565,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.formularz h1{display:none}
     section div.kontakt div.formularz h3{float:none;}
 
-    section div.kontakt{display:none !important;}
-    section div.kontakt_background{display:none !important;}
+
 
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
