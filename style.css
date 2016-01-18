@@ -565,6 +565,9 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.formularz h1{display:none}
     section div.kontakt div.formularz h3{float:none;}
 
+    section div.kontakt{display:none !important;}
+    section div.kontakt_background{display:none !important;}
+
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
     section.startSite {height: auto;overflow: auto}
