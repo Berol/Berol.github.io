@@ -256,7 +256,6 @@ section.main div.obrazek{
 
 section.main div.image {
     position: relative;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
@@ -417,7 +416,6 @@ section.startSite{
 .tlo1{
     background-image: url("./img/tlo1.jpg") !important;
     transition: background-image 3s;
-    background-size: contain;
 }
 
 .tlo2{
@@ -470,14 +468,17 @@ section.startSite div.heading h2{
     font-weight: 300;
 }
 
-section.startSite div.heading h1:first-of-type, section.startSite div.heading h2:first-of-type,section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first-of-type{
+section.startSite div.heading h1:first-of-type, section.startSite div.heading h2:first-of-type,
+section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first-of-type{
     display: none;
 }
 
 
 
 
-
+@media only screen and (max-width: 640px) {
+    body { font-size: 12px;}
+}
 @media only screen and (max-width: 801px) {
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
@@ -551,7 +552,7 @@ section.startSite div.heading h1:first-of-type, section.startSite div.heading h2
         z-index: -1;
     }
     section.ftr {display: none}
-    section.startSite {height: auto}
+
     section div.kontakt {width:100%;left:0}
     section div.kontakt div.close{right:0;z-index:2}
     section div.kontakt div.mapa{display:none}
@@ -561,8 +562,7 @@ section.startSite div.heading h1:first-of-type, section.startSite div.heading h2
 
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
-    body {font-size:10px}
-    section.startSite div.heading{margin:5em 1.8em;background-size: contain !important}
+    section.ftr {display: none}
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
@@ -570,6 +570,7 @@ section.startSite div.heading h1:first-of-type, section.startSite div.heading h2
     section.main div.context h1{display:none !important}
     section.main div.context h2{position:absolute;top:-0.5em}
     section.main div.context p,section.main div.descriptions p {font-size: 1.25em}
+
     section div.kontakt div.mapa{display:none}
     section div.kontakt {top:1%}
     section div.kontakt div.formularz{position:static;width:100%;padding-top:0;margin-left:0}
