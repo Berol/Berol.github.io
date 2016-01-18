@@ -417,8 +417,7 @@ section.startSite{
 .tlo1{
     background-image: url("./img/tlo1.jpg") !important;
     transition: background-image 3s;
-    background-position: top right !important;
-    overflow: hidden;
+    background-size: contain;
 }
 
 .tlo2{
@@ -563,7 +562,7 @@ section.startSite div.heading h1:first-of-type, section.startSite div.heading h2
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
     body {font-size:10px}
-    section.startSite div.heading{margin:5em 1.8em}
+    section.startSite div.heading{margin:5em 1.8em;background-size: contain !important}
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
