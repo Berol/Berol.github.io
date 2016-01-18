@@ -196,7 +196,6 @@ section.nav div.top ul li ul.dropdown li{
     font-size: 1.25em;
     color: #a4adca;
     cursor: pointer;
-    height: 2.4em;
     width: 10.4em;
     float: left;
     padding: 0;
@@ -478,14 +477,12 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 
 
-@media only screen and (min-width: 480px) {
-    body { font-size: 12px;}
-}
+
 @media only screen and (max-width: 801px) {
     section.nav {background: transparent; position: static}
     section.nav div.ikons {display: none}
     section.nav div.top div.menuMobile{display:block}
-    section.nav div.top ul{margin:0;display:none}
+    section.nav div.top ul{margin:0;display:none;background-color: #523366}
     section.nav div.top ul li{padding: 0.5em}
     section.startSite div.green_box{display:none}
     section.main div.obrazek{margin-top: 5em;}
