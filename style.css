@@ -417,6 +417,8 @@ section.startSite{
 .tlo1{
     background-image: url("./img/tlo1.jpg") !important;
     transition: background-image 3s;
+    background-position: top right !important;
+    overflow: hidden;
 }
 
 .tlo2{
