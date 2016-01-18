@@ -257,6 +257,7 @@ section.main div.obrazek{
 section.main div.image {
     position: relative;
     background-repeat: no-repeat;
+    background-position: left top;
     top: 0;
     left: 0;
     background-size: 0;
@@ -514,7 +515,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (min-width: 1340px) {
     body { font-size: 16px; }
-    section.main div.context{min-height: 410px}
+    section.main div.context{min-height: 450px}
 }
 @media only screen and (min-width: 1580px) {
     body { font-size: 17px; }

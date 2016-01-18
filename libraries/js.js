@@ -121,7 +121,7 @@ $(function () {
 
         function imageCover(){
             console.log('aaa');
-            $('.image').css({'background-size' : imgWidth,'background-position':'left top'});
+            $('.image').css({'background-size' : imgWidth});
             $('.kafelka').css('position','static');
         }
 
