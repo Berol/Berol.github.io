@@ -256,7 +256,6 @@ section.main div.obrazek{
 
 section.main div.image {
     position: relative;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
@@ -513,10 +512,10 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.context h2{
         margin: 0.5em;
     }
+    section.main div.context{min-height: 450px}
 }
 @media only screen and (min-width: 1340px) {
     body { font-size: 16px; }
-    section.main div.context{min-height: 410px}
 }
 @media only screen and (min-width: 1580px) {
     body { font-size: 17px; }
@@ -535,17 +534,15 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 }
 
-@media screen and (orientation: portrait) and (max-width: 645px){
-    section.startSite {background-size: 0;height: auto}
-    section.startSite div.heading{margin: 5em 2em}
-
-
+@media screen and (orientation: portrait) and (max-width:645px){
+    section.startSite {background-size: 0;height:auto}
+    section.startSite div.heading{margin:4em 2em}
 
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.context h2{font-size:2em}
     section.main div.descriptions{margin:5em 0 0 0 }
-    section.main div.backgroundMobile, section.startSite div.backgroundMobile{
+    section.main div.backgroundMobile,section.startSite div.backgroundMobile{
         height: 100%;
         width: 100%;
         position: fixed;
@@ -558,9 +555,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         opacity: 0.2;
         z-index: -1;
     }
-
-    section.ftr {display: none}
-
+    section.ftr {display: static}
     section div.kontakt {width:100%;left:0}
     section div.kontakt div.close{right:0;z-index:2}
     section div.kontakt div.mapa{display:none}
@@ -570,6 +565,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
+    section.startSite {height: auto;overflow: auto}
+    section.startSite div.heading h2 {width:100%}
 
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
