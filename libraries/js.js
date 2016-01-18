@@ -134,8 +134,8 @@ $(function () {
     if ($('.startSite').length!==0){
         function srartSiteImageTextChange() {
 
-        $('.startSite').toggleClass('tlo1');
-        $('.startSite').toggleClass('tlo2');
+        $('.startSite, .backgroundMobile').toggleClass('tlo1');
+        $('.startSite, .backgroundMobile').toggleClass('tlo2');
 
         var textVisibility = $('.heading, .box2').children();
         $.each(textVisibility, function () {
