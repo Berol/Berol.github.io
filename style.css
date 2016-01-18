@@ -538,8 +538,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media screen and (orientation: portrait) and (max-width: 645px){
     section.startSite {background-size: 0;height: auto}
     section.startSite div.heading{margin: 4em 2em}
-    section.startSite div.green_box{display: block}
-    section.startSite div.green_box.box2{position: relative;width: 100%;bottom: 0}
+    section.startSite div.green_box.box1{display: block}
     /*section.startSite div.backgroundMobile{top:1em}*/
 
 
