@@ -422,9 +422,8 @@ section.startSite{
 }
 
 .tlo2{
-    background: url("./img/tlo2.jpg") cover no-repeat;
+    background: url("./img/tlo2.jpg") top right/cover no-repeat;
     transition: background 3s;
-    background-position: fixed;
 }
 
 
@@ -508,7 +507,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-width: 850px) {
     section.startSite div.green_box{width: 230px;padding: 10px}
-    .tlo1{background: url("./img/tlo1mobile.jpg") top right/cover no-repeat;} !important
+    .tlo1 {background: url("./img/tlo1mobile.jpg") top right/cover no-repeat !important;}
     /*.tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat;}.*/
 
 
