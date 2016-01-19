@@ -407,6 +407,7 @@ section.ftr h3{
 
 
 section.startSite{
+    background:transparent  50% 50%/cover no-repeat;
     position: relative;
     height: calc(100vh - 10.85em);
     overflow: hidden;
