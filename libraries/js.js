@@ -4,9 +4,9 @@ $(function () {
     //$('body').on('click',function(){
     //    window.alert("Kochana Laureczko podaj mi tê liczbê " + $(window).height())
     //})
-    $(window).resize(function () {
-        location.reload();
-    });
+    //$(window).resize(function () {
+    //    location.reload();
+    //});
 
     $('.formularz_kontaktowy').on('click',function(){
         window.scrollTo(0,0);
@@ -131,31 +131,31 @@ $(function () {
 
     })();
 
-    if ($('.startSite').length!==0){
-        function srartSiteImageTextChange() {
-
-        $('.startSite, .backgroundMobile').toggleClass('tlo1');
-        $('.startSite, .backgroundMobile').toggleClass('tlo2');
-
-        var textVisibility = $('.heading, .box2').children();
-        $.each(textVisibility, function () {
-            if ($(this).css('display') == 'none') {
-                $(this).fadeIn(3000);
-            } else {
-                $(this).hide();
-            }
-        });
-
-        $('.box1').animate({left:'-360px'},function(){
-            $(this).animate({left:0})
-        });
-        $('.box2').animate({right:'-360px'},function(){
-            $(this).animate({right:0})
-        });
-
-    };
-        setInterval(srartSiteImageTextChange, 8000);
-    }
+    //if ($('.startSite').length!==0){
+    //    function srartSiteImageTextChange() {
+    //
+    //    $('.startSite').toggleClass('tlo1');
+    //    $('.startSite').toggleClass('tlo2');
+    //
+    //    var textVisibility = $('.heading, .box2').children();
+    //    $.each(textVisibility, function () {
+    //        if ($(this).css('display') == 'none') {
+    //            $(this).fadeIn(3000);
+    //        } else {
+    //            $(this).hide();
+    //        }
+    //    });
+    //
+    //    $('.box1').animate({left:'-360px'},function(){
+    //        $(this).animate({left:0})
+    //    });
+    //    $('.box2').animate({right:'-360px'},function(){
+    //        $(this).animate({right:0})
+    //    });
+    //
+    //};
+    //    setInterval(srartSiteImageTextChange, 8000);
+    //}
 
     $('.ftr').hover(function () {
             $(this).stop().animate({'margin-bottom': 0}, 400)
