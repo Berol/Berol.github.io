@@ -505,8 +505,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-width: 850px) {
     section.startSite div.green_box{width: 230px;padding: 10px}
-    .tlo1{background: url("./img/tlo1mobile.jpg") top right/cover no-repeat;}
-    .tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat;}
+    /*tlo1{background: url("./img/tlo1mobile.jpg") top right/cover no-repeat;}*/
+    /*.tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat;}.*/
 
 
     section.nav div.ikons a{font-size: 0.9em}
