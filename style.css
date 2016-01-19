@@ -415,7 +415,7 @@ section.startSite{
 
 .tlo1{
     background-image: url("./img/tlo1.jpg") !important;
-
+    background-position: right top;
     transition: background 3s;
 }
 
