@@ -233,10 +233,7 @@ section.main{
 }
 
 section.main div.firmoweFoto{
-    position: absolute;
-    top: 0;
-    right: -10%;
-    width: 60%;
+height:40em;
 }
 
 section.main div.obrazek{
@@ -273,12 +270,7 @@ section.main div.kafelka{
 }
 
 section.main div.contextFirma{
-    position: relative;
-    width: 40%;
-    padding: 20px 0 20px 20px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    /*position: relative;*/
 }
 
 section.main div.context{
@@ -467,7 +459,7 @@ section.startSite div.heading{
     top: 40%;
     margin-left: 4.25em;
     margin-right: 340px ;
-    text-shadow: 1px 1px 0 white;
+    text-shadow: 0 1px 0 white;
     font-family: 'Signika',"sans-serif";
 }
 
