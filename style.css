@@ -414,15 +414,15 @@ section.startSite{
 }
 
 .tlo1{
-    background: url("./img/tlo1.jpg") top right/cover no-repeat !important ;
-    transition: background 3s;
+    background-image: url("./img/tlo1.jpg") !important ;
+    transition: background-image 3s;
 
 }
 
 /*.tlo1mobile {background: url("./img/tlo1mobile.jpg") top right/cover no-repeat;transition: background 3s;}*/
 
 .tlo2{
-    background: url("./img/tlo2.jpg") top right/cover no-repeat !important;
+    background-image: url("./img/tlo2.jpg") !important;
     transition: background 3s;
 }
 
@@ -564,6 +564,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         opacity: 0.2;
         z-index: -1;
     }
+    section.ftr {display: none}
 
     section div.kontakt {width:100%;left:0}
     section div.kontakt div.close{right:0;z-index:2}
