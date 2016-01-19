@@ -1,6 +1,3 @@
-html{
-    height:100%
-}
 
 body{
     margin: auto;
@@ -505,6 +502,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.obrazek{margin-top: 5em;}
 
     section.main, section.startSite{margin-top: 0;}
+    section.ftr {position: static}
 
 
 }
@@ -583,11 +581,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
-    section.startSite {height: auto;z-index: 0}
-    /*section.startSite div.heading h2 {width:100%}*/
-
-
-
+    body {font-size:10px}
+    
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
