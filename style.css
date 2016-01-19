@@ -540,8 +540,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 @media screen and (orientation: portrait) and (max-width:645px){
     /*.tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat;transition: background 3s;}*/
-    /*body{height: calc(100vh - 6.4em)}*/
-    /*section.startSite {height: 100%}*/
+    body{height: calc(100vh - 6.4em)}
+    section.startSite {height: 100%}
     section.startSite div.heading {margin: 0 }
     section.startSite div.heading h2{position: absolute;bottom: 0;left: 0}
 
