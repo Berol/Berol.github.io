@@ -1,6 +1,9 @@
+html{
+    height:100%
+}
+
 body{
     margin: auto;
-    height: 100%;
     font-size: 16px;
 }
 
@@ -410,7 +413,7 @@ section.startSite{
     /*background:transparent  50% 50%/cover no-repeat;*/
     /*position: relative;*/
     /*height: calc(100vh - 11.85em);*/
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .tlo1{
@@ -455,7 +458,7 @@ section.startSite div.box1{
 
 section.startSite div.box2{
     position: absolute;
-    bottom: 0;
+    bottom: 3.3em;
     right: 0;
 }
 
