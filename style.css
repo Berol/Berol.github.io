@@ -548,9 +548,9 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 
 @media screen and (orientation: portrait) and (max-width:645px){
-    body{height: 100vh;background:red !important}
+    body{height: 100vh;background:blue !important}
     section.ftr{display: none}
-    section.startSite {height: 100%}
+    
 
 
 
