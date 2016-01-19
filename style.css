@@ -233,7 +233,10 @@ section.main{
 }
 
 section.main div.firmoweFoto{
-height:40em;
+    height:40em;
+    background-image: url('./img/grupowe.jpg') !important;
+    background-repeat:no-repeat;
+    background-position: 50% top;
 }
 
 section.main div.obrazek{
