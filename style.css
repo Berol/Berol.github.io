@@ -237,6 +237,7 @@ section.main div.firmoweFoto{
     background-image: url('./img/grupowe.jpg') !important;
     background-repeat:no-repeat;
     background-position: 50% top;
+    background-size: contain;
 }
 
 section.main div.obrazek{
