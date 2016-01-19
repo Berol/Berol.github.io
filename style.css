@@ -416,13 +416,18 @@ section.startSite{
 .tlo1{
     background-image: url("./img/tlo1.jpg") !important ;
     background-position: right top;
-    transition: background 3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 3s;
 }
 
-/*.tlo2{*/
-    /*background: url("./img/tlo2.jpg") top right/cover no-repeat;*/
-    /*transition: background 3s;*/
-/*}*/
+.tlo2{
+    background-image: url("./img/tlo2.jpg") !important ;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 3s;
+}
 
 
 section.startSite div.green_box{
@@ -505,10 +510,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-width: 850px) {
     section.startSite div.green_box{width: 230px;padding: 10px}
-    .tlo1 {background-image: url("./img/tlo2mobile.jpg") !important;}
-    /*.tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat;}.*/
-
-
+    .tlo1 {background-image: url("./img/tlo1mobile.jpg") !important}
+    .tlo2{background-image: url("./img/tlo2mobile.jpg") !important}
     section.nav div.ikons a{font-size: 0.9em}
     section div.kontakt div.formularz h3{ font-size: 1.5em}
 }
@@ -548,9 +551,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media screen and (orientation: portrait) and (max-width:645px){
     body{height: 100vh}
     section.ftr{display: none}
-
-
-
 
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
