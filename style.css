@@ -467,7 +467,7 @@ section.startSite div.heading{
     top: 40%;
     margin-left: 4.25em;
     margin-right: 340px ;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 1px 0 white;
     font-family: 'Signika',"sans-serif";
 }
 
@@ -499,10 +499,11 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.nav div.top ul{margin:0;display:none;background-color: #523366}
     section.nav div.top ul li{padding: 0.5em}
     section.startSite div.green_box{display:none}
+    section.startSite div.heading{top:50%;margin-right: 4.25em}
     section.main div.obrazek{margin-top: 5em;}
-
     section.main, section.startSite{margin-top: 0;}
     section.ftr {position: static}
+    .startftr{display: none}
 
 
 }
@@ -552,6 +553,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 @media screen and (orientation: portrait) and (max-width:645px){
     body{height: 100vh}
     section.ftr{display: none}
+    section.startSite div.heading{top:50%;margin: 0 2em}
+    section.startSite div.heading h1{margin:0}
 
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
@@ -582,7 +585,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
     body {font-size:10px}
-    
+
+
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
@@ -595,6 +599,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt {top:1%}
     section div.kontakt div.formularz{position:static;width:100%;padding-top:0;margin-left:0}
     section div.kontakt div.formularz h1{display:none}
+
 
 }
 
