@@ -534,8 +534,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 
 @media screen and (orientation: portrait) and (max-width:1645px){
-    .tlo1 {background: url("./img/tlo1mobile.jpg") top right/cover no-repeat}
-    .tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat}
+    .tlo1 {background: url("./img/tlo1mobile.jpg") top right/cover no-repeat !important}
+    .tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat !important}
     /*body{height: calc(100vh - 6.4em)}*/
     /*section.startSite {height: 100%}*/
     section.startSite div.heading {margin: 0 }
