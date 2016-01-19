@@ -407,21 +407,20 @@ section.ftr h3{
 
 
 section.startSite{
-    background:transparent  50% 50%/cover no-repeat;
     position: relative;
-    height: calc(100vh - 12.13em);
+    height: calc(100vh - 10.85em);
     overflow: hidden;
 }
 
 .tlo1{
-    background-image: url("./img/tlo1.jpg") !important;
-    transition: background-image 3s;
+    background: url("./img/tlo1.jpg") top right/cover no-repeat ;
+    transition: background 3s;
 
 }
 
 .tlo2{
-    background-image: url("./img/tlo2.jpg") !important;
-    transition: background-image 3s;
+    background: url("./img/tlo2.jpg") top right/cover no-repeat;
+    transition: background 3s;
 }
 
 section.startSite div.green_box{
@@ -490,7 +489,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section.main div.obrazek{margin-top: 5em;}
 
     section.main, section.startSite{margin-top: 0;}
-    section.ftr {position: static}
+
 
 }
 @media only screen and (min-width: 768px) {
@@ -534,15 +533,20 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 }
 
-@media screen and (orientation: portrait) and (max-width:645px){
-    section.startSite {background: none !important;height:auto}
-    section.startSite div.heading{margin:4em 2em}
+@media screen and (orientation: portrait) and (max-width:1645px){
+    .tlo1 {background: url("./img/tlo1mobile.jpg") top right/cover no-repeat}
+    .tlo2{background: url("./img/tlo2mobile.jpg") top right/cover no-repeat}
+    section.startSite{height: calc(100vh - 6.4em)}
+    section.startSite div.heading {margin: 0 }
+    section.startSite div.heading h2{position: absolute;bottom: 0;left: 0}
+
+    section.ftr{display: none}
 
     section.main div.obrazek{display:none}
     section.main div.context{position: static;width:100%}
     section.main div.context h2{font-size:2em}
     section.main div.descriptions{margin:5em 0 0 0 }
-    section.main div.backgroundMobile, div.backgroundMobile{
+    section.main div.backgroundMobile{
         height: 100%;
         width: 100%;
         position: fixed;
@@ -556,8 +560,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
         z-index: -1;
     }
 
-    section.ftr {display: static}
-
     section div.kontakt {width:100%;left:0}
     section div.kontakt div.close{right:0;z-index:2}
     section div.kontakt div.mapa{display:none}
@@ -565,12 +567,12 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.formularz h1{display:none}
     section div.kontakt div.formularz h3{float:none;}
 
-
-
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
-    section.startSite {height: auto;overflow: auto}
+    section.startSite {height: auto;}
     section.startSite div.heading h2 {width:100%}
+
+
 
     section.main {margin-right:0}
     section.main div.descriptions {clear:both;margin: 0}
