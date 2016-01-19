@@ -2,6 +2,7 @@ body{
     margin: auto;
     height: 100%;
     font-size: 16px;
+    position: relative;
 }
 
 section div.kontakt_background{
@@ -411,11 +412,12 @@ section.startSite{
     position: relative;
     height: calc(100vh - 11.85em);
     overflow: hidden;
+    z-index: 1;
 }
 
 .tlo1{
     background: url("./img/tlo1.jpg") top right/cover no-repeat !important;
-    transition: background 3s;;
+    transition: background 3s;
 
 }
 
@@ -547,7 +549,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 
 @media screen and (orientation: portrait) and (max-width:645px){
-    body{height: 100vh;background:red!important;}
+    body{height: 100vh;}
     section.ftr{display: none}
     section.startSite {height: 100%}
 
@@ -581,7 +583,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 }
 @media screen and (orientation: landscape) and (max-height: 440px){
-    section.startSite {height: auto;}
+    section.startSite {height: auto;z-index: 0}
     /*section.startSite div.heading h2 {width:100%}*/
 
 
