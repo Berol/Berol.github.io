@@ -512,8 +512,8 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 @media only screen and (max-width: 850px) {
     section.startSite div.green_box{width: 230px;padding: 10px}
-    .tlo1 {background-image: url("./img/tlo1mobile.jpg") !important}
-    .tlo2{background-image: url("./img/tlo2mobile.jpg") !important}
+    .tlo1 {background-image: url("./img/tlo1mobile.jpg") !important;transition: background-image 3s;}
+    .tlo2{background-image: url("./img/tlo2mobile.jpg") !important;transition: background-image 3s;}
     section.nav div.ikons a{font-size: 0.9em}
     section div.kontakt div.formularz h3{ font-size: 1.5em}
 }
