@@ -414,7 +414,8 @@ section.startSite{
 }
 
 .tlo1{
-    background: url("./img/tlo1.jpg") top right/cover no-repeat !important;
+    background-image: url("./img/tlo1.jpg") !important;
+
     transition: background 3s;
 }
 
