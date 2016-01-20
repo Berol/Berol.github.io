@@ -22,19 +22,17 @@
         <div class="formularz">
             <h1>SKONTAKTUJ SIĘ Z NAMI</h1>
             <h3>(032) 225 76 65 <br> (032) 225 83 73</h3>
-
             <h2>Wyślij do nas <span>email!</span></h2>
-
-            <form>
+            <form onsubmit="return validateForm()" action="./php/formularz.php" method="get">
                 <h4>Podaj swój numer telefonu, a bezpłatnie oddzwonimy</h4>
-                <input type="text" name="Name" placeholder="Twoje imię..." />
-                <input type="text" name="Phone number" placeholder="Twój numer telefonu..."  />
-                <input type="text" name="E-mail" placeholder="Twój e-mail..."  />
-                <input type="text" name="Title" placeholder="Tytuł wiadomości..." />
-
+                <input type="text" name="telefon" placeholder="Twój numer telefonu..."  />
+                <input type="text" name="email" placeholder="Twój e-mail..."  />
+                <input type="text" name="tytul" placeholder="Tytuł wiadomości..." />
+                <input type="text" name="imie" placeholder="Twoje imię..." />
                 <h4>Wiadomość:</h4>
-                <textarea rows="5"  placeholder="Twoja wiadomość..."></textarea>
-                <button type="button">Wyślij wiadomość <i class="flaticon-letter110"></i></button>
+                <textarea rows="5" name="wiadomosc" placeholder="Twoja wiadomość..."></textarea>
+                <button type="submit" value="submit">Wyślij wiadomość <i class="flaticon-letter110"></i></button>
+                <h5></h5>
             </form>
         </div>
     </div>

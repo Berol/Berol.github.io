@@ -60,16 +60,23 @@ section div.kontakt div.formularz h3{
 section div.kontakt div.formularz input{
     width: 40%;
     padding: 2px;
-    margin: 0.1em;
+    margin: 0.3em;
+    border: 1px solid black;
 }
 
 section div.kontakt div.formularz textarea{
     width: 90%;
     margin-top: 0.2em;
+    border: 1px solid black;
 }
 
 section div.kontakt div.formularz h2 span{
     color: #7DBA2F;
+}
+
+section div.kontakt div.formularz h5 {
+    color: red;
+    display: inline-block;
 }
 
 section div.kontakt div.close{
