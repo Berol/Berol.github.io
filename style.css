@@ -224,8 +224,6 @@ section.nav div.top ul li.mobile {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3459', endColorstr='#523366',GradientType=0 ); /* IE6-9 */
 }
 
-
-
 section.main, section.startSite{
     margin-top: 8.595em;
 }
@@ -280,8 +278,26 @@ section.main div.kafelka{
     background-repeat: no-repeat;
 }
 
-section.main div.contextFirma{
-    /*position: relative;*/
+section.main div.contextFirma ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 120%;
+    margin-left: -10%;
+}
+
+section.main div.contextFirma ul li{
+    display: inline-block;
+    position: relative;
+}
+
+section.main div.contextFirma ul li p{
+    margin: 0;
+}
+
+section.main div.contextFirma ul li h2{
+    font-size: 1em;
+    margin-bottom: 0;
 }
 
 section.main div.context{
@@ -591,6 +607,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 
     section.main {margin-right:0}
+    section.main div.contextFirma ul{width: 110%;}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
     section.main div.context {width:100%;left:0;padding-top: 5em}
