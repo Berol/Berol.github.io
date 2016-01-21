@@ -79,6 +79,14 @@ section div.kontakt div.formularz h5 {
     display: inline-block;
 }
 
+section div.kontakt div.formularz h3{
+    font-size: 1.875em;
+}
+
+section div.kontakt div.formularz h4{
+    font-size: 1em;
+}
+
 section div.kontakt div.close{
     padding: 10px 15px;
     font-size: 0.938em;
@@ -237,14 +245,6 @@ section.main{
     box-sizing: border-box;
 }
 
-section.main div.firmoweFoto{
-    height:40em;
-    background-image: url('./img/grupowe.jpg') !important;
-    background-repeat:no-repeat;
-    background-position: 50% top;
-    background-size: contain;
-}
-
 section.main div.obrazek{
     position: absolute;
     overflow: hidden;
@@ -297,8 +297,6 @@ section.main div.contextFirma ul li{
     vertical-align: text-top;
 }
 
-section.main div.contextFirma ul li p:first-child{color: red}
-
 section.main div.contextFirma ul li p{
     margin: 0;
 }
@@ -335,14 +333,6 @@ section.main div.context h2, div.contextFirma h2, div.descriptions h2, div.formu
     font-family: 'Signika',"sans-serif";
 }
 
-div.formularz h3{
-    font-size: 1.875em;
-}
-
-div.formularz h4{
-    font-size: 1em;
-}
-
 section.main div.context button, div.formularz button {
     margin: 0.83em;
     border: 1px solid #2C3459;
@@ -373,12 +363,6 @@ section.main div.context p, div.contextFirma p, div.context ul li, div.descripti
 
 section.main section.main button{
     display: block;
-}
-
-section.main div.context div.longButton{
-    display: inline-block;
-    height:20px;
-    margin: 2px 2px;
 }
 
 section.main div.descriptions{
@@ -616,7 +600,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 
 
     section.main {margin-right:0}
-    section.main div.contextFirma ul{width: 110%;}
     section.main div.descriptions {clear:both;margin: 0}
     section.main div.obrazek {float: left;position:relative;width:65%;margin-top: 5em;max-height: 240px}
     section.main div.context {width:100%;left:0;padding-top: 5em}

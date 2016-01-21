@@ -81,8 +81,6 @@ $(function () {
     (function wielkoscObrazkow() {
         var contextHeight = $('.context').css('height');
         $('.obrazek').css('height', contextHeight);
-        //var height = $('.contextFirma').css('height');
-        //$('.firmoweFoto').css('height', height);
 
         dividableWidth = parseInt($('div.obrazek').css('width')) - (parseInt($('div.obrazek').css('width')) % 40);
         dividableHeight = parseInt($('div.obrazek').css('height')) - (parseInt($('div.obrazek').css('height')) % 40);
