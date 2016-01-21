@@ -278,18 +278,26 @@ section.main div.kafelka{
     background-repeat: no-repeat;
 }
 
+section.main div.contextFirma {
+    margin-top:5em;
+}
+
 section.main div.contextFirma ul{
     list-style: none;
     padding: 0;
     text-align: center;
-    width: 120%;
-    margin-left: -10%;
+    width: 123%;
+    margin-left: -12%;
 }
 
 section.main div.contextFirma ul li{
     display: inline-block;
     position: relative;
+    max-width: 170px;
+    vertical-align: text-top;
 }
+
+section.main div.contextFirma ul li p:first-child{color: red}
 
 section.main div.contextFirma ul li p{
     margin: 0;
@@ -298,6 +306,7 @@ section.main div.contextFirma ul li p{
 section.main div.contextFirma ul li h2{
     font-size: 1em;
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 section.main div.context{

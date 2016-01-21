@@ -91,7 +91,7 @@ $(function () {
         $('div.image').css('height', dividableHeight);
     })();
 
-    (function imageEffects() {
+    function imageEffects() {
 
         function kafelka(x, y, count) {
             var nowaKafelka = $('<div class="kafelka"></div>');
@@ -173,7 +173,9 @@ $(function () {
 
         $('.kafelka').css('background-size', imgWidth);
 
-    })();
+    }
+
+    if ($('.contextFirma').length === 0){imageEffects()}
 
     if ($('.startSite').length !== 0) {
         function srartSiteImageTextChange() {
