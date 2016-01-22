@@ -173,7 +173,9 @@ $(function () {
 
     }
 
-    if ($('.contextFirma').length === 0){imageEffects()}
+    if ($('.contextFirma').length === 0){
+        $('.image').ready(imageEffects)
+    }
 
     if ($('.startSite').length !== 0) {
         function srartSiteImageTextChange() {
