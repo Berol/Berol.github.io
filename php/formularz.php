@@ -7,7 +7,7 @@ $imie = ($_GET['imie']);
 $wiadomosc = ($_GET['wiadomosc']);
 $tresc = "Wiadomosc od : $imie <br> Adres e-mail : $email <br> Numer telefonu: $telefon <br> Tresc: $wiadomosc";
 
-require './PHPMailerAutoload.php';
+require './PHPMailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
