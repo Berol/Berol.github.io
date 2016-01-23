@@ -207,5 +207,9 @@ $(function () {
         $(this).stop().animate({'margin-bottom': '-8.1em'}, 400)
     });
 
+    (function preventSelection() {
+        $('.main, .startSite').css({'-webkit-user-select': 'none', '-moz-user-select': 'none','-ms-user-select': 'none','user-select': 'none'})
+    })();
+
 });
 
