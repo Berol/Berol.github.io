@@ -1,8 +1,6 @@
 $(function () {
 
-    $(window).resize(function () {
-        location.reload();
-    });
+
 
     $('.formularz_kontaktowy').on('click', function () {
         window.scrollTo(0, 0);
@@ -210,6 +208,20 @@ $(function () {
     (function preventSelection() {
         $('.main, .startSite').css({'-webkit-user-select': 'none', '-moz-user-select': 'none','-ms-user-select': 'none','user-select': 'none'})
     })();
+
+    var lastWindowHeight = $(window).height();
+    var lastWindowWidth = $(window).width();
+
+    $(window).resize(function() {
+        if($(window).height()!=lastWindowHeight || $(window).width()!=lastWindowWidth){
+
+            lastWindowHeight = $(window).height();
+            lastWindowWidth = $(window).width();
+
+            location.reload();
+        }
+    });
+
 
 });
 
