@@ -193,11 +193,8 @@ section.nav div.top ul li.alternativeIkons{
 }
 
 section.nav div.top ul li ul.dropdown {
-    /*padding: 0;*/
     position: absolute;
     background: black;
-    /*width:12em;*/
-    /*height:2em;*/
     left :0;
     top:11.8em;
 }
@@ -370,6 +367,7 @@ section.main div.descriptions{
 
 
 section.ftr{
+    overflow: hidden;
     position: fixed;
     width: 100%;
     margin-bottom: -8.1em;
@@ -383,7 +381,7 @@ section.ftr{
 
 }
 
-section.ftr div.column:first-child h2, section.ftr div.column:nth-child(2) h2{
+section.ftr div.column:first-child h2, section.ftr div.column:nth-child(3) h2{
     padding-top: 0.188em;
 }
 
@@ -416,11 +414,18 @@ section.ftr h3{
     color: #2C3459;
 }
 
+.whitecover::after{
+    content: 'a';
+    display: block;
+    color: white;
+    position: relative;
+    width: 450px;
+    z-index: 666;
+    background: white;
+    height: 2em;
+}
 
 section.startSite{
-    /*background:transparent  50% 50%/cover no-repeat;*/
-    /*position: relative;*/
-    /*height: calc(100vh - 11.85em);*/
     overflow: hidden;
 }
 
@@ -472,7 +477,6 @@ section.startSite div.box2{
 
 section.startSite div.heading{
     color: #2C3459;
-    /*margin: 11.500em 40% 0 6.250em;*/
 
     position:absolute;
     top: 40%;
@@ -550,12 +554,10 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
 }
 
 @media only screen and (max-height: 800px) {
-    /*section.startSite div.heading{margin: 2.250em 40% 0 4.250em}*/
     section.startSite div.heading h1{font-size: 2.5em;}
     section.startSite div.heading h2{font-size: 1.5em;}
 }
 @media only screen and (max-height: 641px){
-    /*section.startSite div.heading{margin: 1.8em 40% 0 4.250em}*/
     section div.kontakt div.formularz h4{display:none}
     section div.kontakt {top:5%}
 
@@ -594,6 +596,7 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.formularz h3{float:none;}
 
 }
+
 @media screen and (orientation: landscape) and (max-height: 440px){
     body {font-size:10px}
     section.main {margin-right:0}
