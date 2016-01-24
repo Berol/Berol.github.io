@@ -385,9 +385,14 @@ section.ftr div.column:first-child h2, section.ftr div.column:nth-child(3) h2{
     padding-top: 0.188em;
 }
 
+section.ftr div.column:nth-child(3){padding-left: 5px}
+
 section.ftr div.column{
     width: 33%;
     float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 section.ftr i {
