@@ -1,4 +1,3 @@
-
 body{
     margin: auto;
     font-size: 16px;
@@ -615,6 +614,6 @@ section.startSite div.box2 h1:first-of-type, section.startSite div.box2 h2:first
     section div.kontakt div.mapa{display:none}
     section div.kontakt {top:1%}
     section div.kontakt div.formularz{position:static;width:100%;padding-top:0;margin-left:0}
-    section div.kontakt div.formularz h1{display:none}
+    section div.kontakt div.formularz h1, .whitecover{display:none}
 }
 
