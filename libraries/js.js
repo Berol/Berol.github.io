@@ -15,46 +15,50 @@ $(function () {
 
     validateForm = (function () {
         var formularz = document.forms[0];
-        var email = formularz.email.value;
-        var telefon = formularz.telefon.value;
-        var wiadomosc = formularz.wiadomosc.value;
+        var email = formularz['entry.1973629079'].value;
+        var telefon = formularz['entry.2066787020'].value;
+        var wiadomosc = formularz['entry.1738346558'].value;
 
-        $(formularz.telefon).add(formularz.email).add(formularz.wiadomosc).css('border-color', 'rgb(0,0,0)');
+        $(formularz['entry.2066787020']).add(formularz['entry.1973629079']).add(formularz['entry.1738346558']).css('border-color', 'rgb(0,0,0)');
 
         if (!(telefon || email)) {
             $('h5').html('Wymagane przynajmniej jedno pole kontaktowe');
-            $(formularz.telefon).add(formularz.email).css('border-color', 'red');
+            $(formularz['entry.2066787020']).add(formularz['entry.1973629079']).css('border-color', 'red');
             return false
         }
 
         if (telefon && (telefon.search(/[a-z]/i) >= 0)) {
             $('h5').html('Dozwolone tylko cyfry');
-            $(formularz.telefon).css('border-color', 'red');
+            $(formularz['entry.2066787020']).css('border-color', 'red');
             return false
         }
 
 
         if (telefon && telefon.length < 7) {
             $('h5').html('Nieprawid&#322;owy numer telefonu');
-            $(formularz.telefon).css('border-color', 'red');
+            $(formularz['entry.2066787020']).css('border-color', 'red');
             return false
         }
 
         if (email.length > 0 && (email.search(/@.*\../) < 0)) {
             $('h5').html('Nieprawid&#322;owy adres e-mail');
-            $(formularz.email).css('border-color', 'red');
+            $(formularz['entry.1973629079']).css('border-color', 'red');
             return false
         }
 
         if (wiadomosc.length === 0) {
             $('h5').html('Wymagana tre&#347;&#263; wiadomo&#347;ci');
-            $(formularz.wiadomosc).css('border-color', 'red');
+            $(formularz['entry.1738346558']).css('border-color', 'red');
             return false
         }
 
         if (wiadomosc && (email || telefon)) {
-            alert('Wiadomosc wyslana pomyslnie');
-            return true
+            $('.alert').show();
+            $('.kontakt').slideUp(600, function () {
+                $('.kontakt_background').css('display', 'none');
+            });
+            setTimeout(function(){$('.alert').hide()},5000);
+            return true;
         }
 
     });
