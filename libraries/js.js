@@ -1,5 +1,5 @@
 $(function () {
-    
+
     $('.formularz_kontaktowy').on('click', function () {
         window.scrollTo(0, 0);
         $('.kontakt_background').css('display', 'block');
